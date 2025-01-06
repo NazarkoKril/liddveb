@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "AvenirNext", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
   list-style: none;
 }
@@ -30,97 +30,4 @@ body {
 img {
   width: 100%;
   display: block;
-}
-
-.dark_btn {
-  color: var(--second, #ece5db);
-  text-align: center;
-  -webkit-text-stroke-width: 0.1599999964;
-  -webkit-text-stroke-color: var(--second, #ece5db);
-  font-family: "Nyght Serif";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background: var(--main, #453526);
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 25px;
-  transition: var(--trans);
-  height: 44px;
-}
-.dark_btn:hover {
-  background-color: #ece5db;
-  color: #453526;
-}
-.dark_btn svg path,
-.dark_btn svg circle {
-  transition: var(--trans);
-}
-.dark_btn:hover svg path {
-  fill: #453526;
-  stroke: #453526;
-}
-.dark_btn:hover svg circle {
-  fill: #453526;
-}
-
-.lite_btn {
-  color: #453526;
-  text-align: center;
-  -webkit-text-stroke-width: 0.1599999964;
-  -webkit-text-stroke-color: var(--second, #ece5db);
-  font-family: "Nyght Serif";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background-color: #ece5db;
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 25px;
-  transition: var(--trans);
-  height: 44px;
-}
-.lite_btn:hover {
-  background: var(--main, #453526);
-  color: var(--second, #ece5db);
-}
-.lite_btn svg path,
-.lite_btn svg circle {
-  transition: var(--trans);
-}
-.lite_btn:hover svg path {
-  fill: #ece5db;
-  stroke: #ece5db;
-}
-.lite_btn:hover svg circle {
-  fill: #ece5db;
-}
-
-body .no_stroke {
-  stroke: none !important;
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: #ece5db;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #4d3e31;
-  border-radius: 6px;
-  transition: all 0.35s ease-in-out;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #453526;
 }/*# sourceMappingURL=base.css.map */

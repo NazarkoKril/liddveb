@@ -1,107 +1,84 @@
-/* AvenirNext */
+/* IBM Plex Sans */
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext/AvenirNextCyr-Thin.woff2') format('woff2'),
-        url('../fonts/AvenirNext/AvenirNextCyr-Thin.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext/AvenirNextCyr-UltraLight.woff2') format('woff2'),
-        url('../fonts/AvenirNext/AvenirNextCyr-UltraLight.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext/AvenirNextCyr-Light.woff2') format('woff2'),
-        url('../fonts/AvenirNext/AvenirNextCyr-Light.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext/AvenirNextCyr-Regular.woff2') format('woff2'),
-        url('../fonts/AvenirNext/AvenirNextCyr-Regular.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext/AvenirNextCyr-Medium.woff2') format('woff2'),
-        url('../fonts/AvenirNext/AvenirNextCyr-Medium.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext/AvenirNextCyr-Demi.woff2') format('woff2'),
-        url('../fonts/AvenirNext/AvenirNextCyr-Demi.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext/AvenirNextCyr-Bold.woff2') format('woff2'),
-        url('../fonts/AvenirNext/AvenirNextCyr-Bold.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir Next';
-    src: url('../fonts/AvenirNext/AvenirNextCyr-Heavy.woff2') format('woff2'),
-        url('../fonts/AvenirNext/AvenirNextCyr-Heavy.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
 }
 
-
-
-/* NyghtSerif */
 @font-face {
-    font-family: 'Nyght Serif';
-    src: url('../fonts/NyghtSerif/NyghtSerif-Light.woff2') format('woff2'),
-        url('../fonts/NyghtSerif/NyghtSerif-Light.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-LightItalic.ttf') format('truetype');
     font-weight: 300;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'Nyght Serif';
-    src: url('../fonts/NyghtSerif/NyghtSerif-Regular.woff2') format('woff2'),
-        url('../fonts/NyghtSerif/NyghtSerif-Regular.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-Italic.ttf') format('truetype');
     font-weight: 400;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'Nyght Serif';
-    src: url('../fonts/NyghtSerif/NyghtSerif-Medium.woff2') format('woff2'),
-        url('../fonts/NyghtSerif/NyghtSerif-Medium.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-MediumItalic.ttf') format('truetype');
     font-weight: 500;
-    font-style: normal;
+    font-style: italic;
 }
 
 @font-face {
-    font-family: 'Nyght Serif';
-    src: url('../fonts/NyghtSerif/NyghtSerif-Bold.woff2') format('woff2'),
-        url('../fonts/NyghtSerif/NyghtSerif-Bold.woff') format('woff');
+    font-family: 'IBM Plex Sans';
+    src: url('../fonts/IBMPlexSans/IBMPlexSans-BoldItalic.ttf') format('truetype');
     font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Nyght Serif';
-    src: url('../fonts/NyghtSerif/NyghtSerif-Dark.woff2') format('woff2'),
-        url('../fonts/NyghtSerif/NyghtSerif-Dark.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
+    font-style: italic;
 }
