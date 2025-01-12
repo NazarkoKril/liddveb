@@ -1,4 +1,420 @@
 @import url(../css/base.css);
 :root {
   --trans: all 0.35s ease-in-out;
+  --text: color 0.35s ease-in-out, background 0.35s ease-in-out;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--Colour-Black-50, rgba(2, 13, 18, 0.05));
+  backdrop-filter: blur(50px);
+  padding: 16px;
+  z-index: 99999;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left__header,
+.right__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Burger Button */
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  transition: var(--text);
+}
+.burger:hover {
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.1));
+}
+
+.burger span {
+  width: 20px;
+  height: 2px;
+  background: #f5f5f5;
+  transition: var(--trans);
+}
+
+/* Burger animation */
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* Logo */
+.logo_header {
+  height: 24px;
+  margin-left: 294px;
+}
+
+/* Language Dropdown */
+.language-dropdown {
+  position: relative;
+}
+
+.languageButton {
+  cursor: pointer;
+  display: flex;
+  width: 67px;
+  height: 40px;
+  padding: 4px 8px 4px 12px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+  border: none;
+  transition: var(--text);
+}
+.languageButton:hover {
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.1));
+}
+.languageButton p {
+  color: var(--Colour-White-1000, #fff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono";
+}
+.languageButton svg {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-list {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: var(--trans);
+}
+
+.language-list.open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: var(--trans);
+}
+
+.language-list li button {
+  border-bottom: 1px solid var(--Colour-Black-100, rgba(2, 13, 18, 0.1));
+  color: #f5f5f5;
+  border: none;
+  padding: 10px 12px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: var(--text);
+  color: var(--Colour-Black-1000, #020d12);
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.language-list li button:hover {
+  background: var(--Colour-Black-200, rgba(2, 13, 18, 0.2));
+}
+
+.language-list li button.selected {
+  color: white;
+  background: var(--Colour-Charged-Blue-500, #27c5d9);
+}
+
+/* Contact Button */
+.contact-button {
+  background: transparent;
+  font-family: "IBM Plex Mono";
+  border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
+  color: var(--Colour-White-1000, #fff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--text);
+}
+.contact-button:hover {
+  background-color: rgba(39, 197, 217, 0.5647058824);
+}
+
+/* Menu Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 72px;
+  left: 0;
+  height: 730px;
+  width: 100%;
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+  overflow: hidden;
+  transition: var(--trans);
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.menu-overlay.active {
+  animation: bounce-in-right 1s ease forwards;
+  opacity: 1;
+}
+
+.menu-overlay.closing {
+  animation: bounce-out-left 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes bounce-out-left {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+.menu-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 16px 0px;
+  padding-left: 260px;
+  position: relative;
+  gap: 12px;
+}
+
+.menu-list li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menu-item {
+  display: flex;
+  align-items: end;
+  gap: 12px;
+}
+.menu-item span {
+  color: var(--Colour-Charged-Blue-700, #197f8c);
+  font-family: "IBM Plex Mono";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -8px;
+  transition: var(--text);
+}
+.menu-item p {
+  color: #878c8e;
+  font-size: 190px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 87%;
+  letter-spacing: -19px;
+  transition: var(--text);
+}
+
+.menu-list li:hover .menu-item span,
+.menu-list li:focus .menu-item span {
+  color: var(--Colour-Charged-Blue-600, #20a1b2);
+}
+.menu-list li:hover .menu-item p,
+.menu-list li:focus .menu-item p {
+  color: #cccfd0;
+}
+
+.menu-list li:active .menu-item span {
+  color: var(--Colour-Charged-Blue-500, #27c5d9);
+}
+.menu-list li:active .menu-item p {
+  color: white;
+}
+
+/* Submenu */
+.submenu {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  align-items: start;
+  width: 100%;
+  max-width: 360px;
+  justify-content: space-between;
+  padding-block: 10px;
+  transition: var(--trans);
+  gap: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+.submenu a {
+  color: var(--Colour-White-500, rgba(255, 255, 255, 0.5));
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  transition: var(--text);
+}
+.submenu a:hover {
+  color: white;
+}
+
+.menu-list li:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.submenu button {
+  position: relative;
+  background: none;
+  color: var(--Colour-White-300, rgba(255, 255, 255, 0.3));
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+  transition: var(--text);
+}
+.submenu button:hover {
+  color: white;
+}
+
+.submenu.active {
+  max-height: 200px;
+  opacity: 1;
+}
+
+.submenu.scroll {
+  overflow-y: auto;
+  max-height: 200px;
+  scroll-behavior: smooth;
+}
+
+.submenu.scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.submenu.scroll::-webkit-scrollbar-track {
+  background: #101820;
+}
+
+.submenu.scroll::-webkit-scrollbar-thumb {
+  background-color: #20a1b2;
+  border-radius: 4px;
+}
+
+.submenu.scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #27c5d9;
+}
+
+@media (max-width: 768px) {
+  .submenu {
+    position: static;
+    display: none;
+    background: #101820;
+    padding: 0;
+  }
+  .submenu.active {
+    display: flex;
+  }
+  .menu-item {
+    cursor: pointer;
+  }
+}
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 5px;
+  color: #f5f5f5;
+}
+
+.close {
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  cursor: pointer;
+  float: right;
 }/*# sourceMappingURL=style.css.map */
