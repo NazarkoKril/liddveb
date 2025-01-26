@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "IBM Plex Sans", sans-serif;
   text-decoration: none;
   list-style: none;
@@ -9,7 +10,7 @@
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -60,4 +61,4 @@ img {
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -4.2px;
-}/*# sourceMappingURL=base.css.map */
+}

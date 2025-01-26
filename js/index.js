@@ -3,69 +3,8 @@ const burger = document.getElementById("burger");
 const menu = document.getElementById("menu");
 
 burger.addEventListener("click", () => {
-    if (!menu.classList.contains("active") && !menu.classList.contains("closing")) {
-        burger.classList.add("open");
-        menu.classList.remove("closing");
-        menu.classList.add("active");
-    } else {
-        closeMenu();
-    }
+    menu.classList.toggle("active"); 
 });
-
-document.addEventListener("click", (e) => {
-    if (!menu.contains(e.target) && !burger.contains(e.target) && menu.classList.contains("active")) {
-        closeMenu();
-    }
-});
-
-function closeMenu() {
-    burger.classList.remove("open");
-    menu.classList.remove("active");
-    menu.classList.add("closing");
-
-    menu.addEventListener(
-        "animationend",
-        () => {
-            menu.classList.remove("closing");
-        },
-        { once: true }
-    );
-}
-
-// submenu --------------------
-const submenus = document.querySelectorAll(".submenu");
-
-submenus.forEach((submenu) => {
-    const items = submenu.querySelectorAll("a");
-    if (items.length > 5) {
-        const seeMoreButton = document.createElement("button");
-        seeMoreButton.textContent = "See More";
-        seeMoreButton.classList.add("see-more");
-        submenu.appendChild(seeMoreButton);
-
-        items.forEach((item, index) => {
-            if (index >= 4) {
-                item.style.display = "none";
-                item.style.opacity = "0";
-                item.style.transition = "opacity 0.5s ease";
-            }
-        });
-
-        seeMoreButton.addEventListener("click", () => {
-            items.forEach((item) => {
-                item.style.display = "block";
-                setTimeout(() => {
-                    item.style.opacity = "1";
-                }, 10);
-            });
-            submenu.classList.add("scroll");
-            submenu.classList.add("active");
-            submenu.scrollTop = 0;
-            seeMoreButton.style.display = "none";
-        });
-    }
-});
-
 
 // Language Dropdown ---------------------------------
 const languageButton = document.getElementById("languageButton");
