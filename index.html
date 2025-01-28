@@ -9,7 +9,7 @@
     <!-- fonts -->
     <link rel="stylesheet" href="./css/fonts.css" />
     <!-- fav-icon -->
-    <link rel="icon" href="./img/fav.svg" type="image/x-icon" />
+    <link rel="icon" href="./assets/img/fav.svg" type="image/x-icon" />
     <title>Liddweb</title>
 </head>
 
@@ -23,9 +23,8 @@
                         <span></span>
                         <span></span>
                     </button>
-
                 </div>
-                <a href="./" class="logo_header"><img src="./img/logo_head.svg" alt="logo" /></a>
+                <a href="./" class="logo_header"><img src="./assets/img/logo_head.svg" alt="logo" /></a>
                 <div class="empty"></div>
                 <div class="right__header">
                     <div class="language-dropdown">
@@ -58,14 +57,17 @@
         </div>
     </header>
 
-    <nav class="menu-overlay" id="menu">
+    <nav class="menu-overlay desktop" id="menu">
         <ul class="menu-list">
             <li>
                 <div class="empty"></div>
-                <a href="./page/service.html" class="menu-item" data-menu="services">
-                    <span>01</span>
-                    <p>Services</p>
-                </a>
+                <div class="title_menu">
+                    <a href="./page/service.html" class="menu-item" data-menu="services">
+                        <span>01</span>
+                        <p>Services</p>
+                    </a>
+                </div>
+
                 <div class="submenu" id="services-submenu">
                     <a href="#">Web Development</a>
                     <a href="#">Software Development</a>
@@ -76,12 +78,12 @@
             </li>
             <li>
                 <div class="empty"></div>
-               
+                <div class="title_menu">
                     <a href="./page/portfolio.html" class="menu-item" data-menu="portfolio"><span>02</span>
                         <p>Portfolio</p>
                     </a>
-                
-                
+                </div>
+
                 <div class="submenu" id="portfolio-submenu">
                     <a href="#">Web Development</a>
                     <a href="#">Software Development</a>
@@ -92,9 +94,12 @@
             </li>
             <li>
                 <div class="empty"></div>
-                <a href="./page/about.html" class="menu-item" data-menu="about"><span>03</span>
-                    <p>About</p>
-                </a>
+                <div class="title_menu">
+                    <a href="./page/about.html" class="menu-item" data-menu="about"><span>03</span>
+                        <p>About</p>
+                    </a>
+                </div>
+
                 <div class="submenu" id="about-submenu">
                     <a href="#">Web Development</a>
                     <a href="#">Software Development</a>
@@ -105,9 +110,12 @@
             </li>
             <li>
                 <div class="empty"></div>
-                <a href="./page/blog.html" class="menu-item" data-menu="blog"><span>04</span>
-                    <p>Blog</p>
-                </a>
+                <div class="title_menu">
+                    <a href="./page/blog.html" class="menu-item" data-menu="blog"><span>04</span>
+                        <p>Blog</p>
+                    </a>
+                </div>
+
                 <div class="submenu" id="blog-submenu">
                     <a href="#web-development">Web Development</a>
                     <a href="#software-development">Software Development</a>
@@ -117,8 +125,444 @@
                 </div>
             </li>
         </ul>
-
     </nav>
+
+    <main>
+        <section class="sect__hero_main">
+            <div class="container">
+                <svg class="main__svg_logo" width="1411" height="374" viewBox="0 0 1411 374" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M42.4195 368C28.5152 368 17.9213 364.193 10.6381 356.579C3.68587 348.633 0.209774 338.701 0.209774 326.783V0.526673H39.9366V333.239H77.6771V368H42.4195ZM105.715 51.675C97.1073 51.675 90.8172 49.6886 86.8446 45.7159C83.2029 41.4122 81.3821 35.9498 81.3821 29.3286V22.873C81.3821 16.2519 83.2029 10.955 86.8446 6.98226C90.8172 2.67854 97.1073 0.526673 105.715 0.526673C114.322 0.526673 120.447 2.67854 124.088 6.98226C128.061 10.955 130.048 16.2519 130.048 22.873V29.3286C130.048 35.9498 128.061 41.4122 124.088 45.7159C120.447 49.6886 114.322 51.675 105.715 51.675ZM85.8514 111.762H125.578V368H85.8514V111.762ZM324.212 326.287H322.226C306.666 358.068 281.672 373.959 247.242 373.959C231.351 373.959 216.95 370.814 204.039 364.524C191.128 358.234 180.037 349.295 170.768 337.708C161.829 326.121 154.877 312.051 149.911 295.499C145.276 278.946 142.959 260.406 142.959 239.881C142.959 219.355 145.276 200.816 149.911 184.263C154.877 167.71 161.829 153.641 170.768 142.054C180.037 130.467 191.128 121.528 204.039 115.238C216.95 108.948 231.351 105.803 247.242 105.803C265.119 105.803 280.347 109.776 292.928 117.721C305.839 125.335 315.605 137.253 322.226 153.475H324.212V0.526673H363.939V368H324.212V326.287ZM258.167 338.205C267.105 338.205 275.547 337.046 283.492 334.729C291.769 332.411 298.887 329.101 304.846 324.797C310.805 320.162 315.439 314.7 318.75 308.41C322.392 301.789 324.212 294.34 324.212 286.063V190.719C324.212 183.767 322.392 177.311 318.75 171.352C315.439 165.062 310.805 159.765 304.846 155.461C298.887 151.158 291.769 147.847 283.492 145.53C275.547 142.881 267.105 141.557 258.167 141.557C235.655 141.557 217.943 148.675 205.032 162.91C192.121 176.815 185.665 195.188 185.665 218.031V261.731C185.665 284.574 192.121 303.113 205.032 317.348C217.943 331.253 235.655 338.205 258.167 338.205ZM562.612 326.287H560.626C545.066 358.068 520.072 373.959 485.642 373.959C469.751 373.959 455.35 370.814 442.439 364.524C429.527 358.234 418.437 349.295 409.167 337.708C400.229 326.121 393.277 312.051 388.311 295.499C383.676 278.946 381.359 260.406 381.359 239.881C381.359 219.355 383.676 200.816 388.311 184.263C393.277 167.71 400.229 153.641 409.167 142.054C418.437 130.467 429.527 121.528 442.439 115.238C455.35 108.948 469.751 105.803 485.642 105.803C503.519 105.803 518.747 109.776 531.327 117.721C544.239 125.335 554.005 137.253 560.626 153.475H562.612V0.526673H602.339V368H562.612V326.287ZM496.566 338.205C505.505 338.205 513.947 337.046 521.892 334.729C530.169 332.411 537.286 329.101 543.246 324.797C549.205 320.162 553.839 314.7 557.15 308.41C560.792 301.789 562.612 294.34 562.612 286.063V190.719C562.612 183.767 560.792 177.311 557.15 171.352C553.839 165.062 549.205 159.765 543.246 155.461C537.286 151.158 530.169 147.847 521.892 145.53C513.947 142.881 505.505 141.557 496.566 141.557C474.055 141.557 456.343 148.675 443.432 162.91C430.521 176.815 424.065 195.188 424.065 218.031V261.731C424.065 284.574 430.521 303.113 443.432 317.348C456.343 331.253 474.055 338.205 496.566 338.205ZM610.323 111.762H649.057L676.369 222.5L703.681 334.729H704.675L735.96 222.5L768.238 111.762H803.495L836.766 222.5L868.548 334.729H869.541L895.86 222.5L923.669 111.762H960.913L892.881 368H843.719L807.964 244.847L785.618 166.883H784.625L762.775 244.847L727.021 368H678.852L610.323 111.762ZM1062.56 373.959C1045.02 373.959 1029.12 370.814 1014.89 364.524C1000.98 358.234 988.901 349.295 978.639 337.708C968.707 325.79 960.927 311.72 955.299 295.499C950.002 278.946 947.354 260.406 947.354 239.881C947.354 219.686 950.002 201.313 955.299 184.76C960.927 168.207 968.707 154.137 978.639 142.55C988.901 130.632 1000.98 121.528 1014.89 115.238C1029.12 108.948 1045.02 105.803 1062.56 105.803C1079.78 105.803 1095.17 108.948 1108.74 115.238C1122.32 121.528 1133.9 130.301 1143.5 141.557C1153.11 152.482 1160.39 165.559 1165.35 180.787C1170.65 196.016 1173.3 212.734 1173.3 230.942V249.813H989.067V261.731C989.067 272.656 990.722 282.918 994.033 292.519C997.674 301.789 1002.64 309.899 1008.93 316.852C1015.55 323.804 1023.5 329.266 1032.77 333.239C1042.37 337.212 1053.13 339.198 1065.04 339.198C1081.27 339.198 1095.34 335.391 1107.25 327.777C1119.5 320.162 1128.94 309.237 1135.56 295.002L1163.86 315.362C1155.59 332.908 1142.68 347.143 1125.13 358.068C1107.59 368.662 1086.73 373.959 1062.56 373.959ZM1062.56 139.074C1051.64 139.074 1041.7 141.06 1032.77 145.033C1023.83 148.675 1016.05 153.972 1009.43 160.924C1003.14 167.876 998.171 176.152 994.529 185.753C990.888 195.023 989.067 205.285 989.067 216.541V220.017H1130.59V214.555C1130.59 191.712 1124.3 173.504 1111.72 159.931C1099.47 146.026 1083.09 139.074 1062.56 139.074ZM1189.11 0.526673H1228.83V153.475H1230.82C1237.44 137.253 1247.04 125.335 1259.62 117.721C1272.53 109.776 1287.93 105.803 1305.8 105.803C1321.69 105.803 1336.09 108.948 1349.01 115.238C1361.92 121.528 1372.84 130.467 1381.78 142.054C1391.05 153.641 1398 167.71 1402.64 184.263C1407.6 200.816 1410.09 219.355 1410.09 239.881C1410.09 260.406 1407.6 278.946 1402.64 295.499C1398 312.051 1391.05 326.121 1381.78 337.708C1372.84 349.295 1361.92 358.234 1349.01 364.524C1336.09 370.814 1321.69 373.959 1305.8 373.959C1271.04 373.959 1246.05 358.068 1230.82 326.287H1228.83V368H1189.11V0.526673ZM1294.88 338.205C1317.39 338.205 1335.1 331.253 1348.01 317.348C1360.92 303.113 1367.38 284.574 1367.38 261.731V218.031C1367.38 195.188 1360.92 176.815 1348.01 162.91C1335.1 148.675 1317.39 141.557 1294.88 141.557C1285.94 141.557 1277.33 142.881 1269.06 145.53C1261.11 147.847 1254.16 151.158 1248.2 155.461C1242.24 159.765 1237.44 165.062 1233.8 171.352C1230.49 177.311 1228.83 183.767 1228.83 190.719V286.063C1228.83 294.34 1230.49 301.789 1233.8 308.41C1237.44 314.7 1242.24 320.162 1248.2 324.797C1254.16 329.101 1261.11 332.411 1269.06 334.729C1277.33 337.046 1285.94 338.205 1294.88 338.205Z"
+                        fill="white" />
+                </svg>
+                <div class="box_center">
+                    <div class="empty"></div>
+                    <div class="flex">
+                        <div class="text">
+                            <h3>digital agency</h3>
+                            <p>
+                                Our teams of technologists, strategists and designers deliver
+                                powerful digital experiences. <br> We specialize in 11 industries
+                                across 55+ countries & regions, delivering innovative solutions
+                                to our customers’ most challenging problems.
+                            </p>
+                        </div>
+                        <button class="btn_blue">
+                            <img src="./assets/icon/arrov_btn.svg" alt="icon arrow button" />
+                            <p>Get my <br> estimate</p>
+                        </button>
+                    </div>
+
+                    <div class="empty"></div>
+
+                </div>
+
+            </div>
+            <div class="container_pd">
+                <div class="grid4">
+                    <div class="box box_back">
+                        <h3>10</h3>
+                        <p>Clients</p>
+                    </div>
+                    <div class="box">
+                        <h3>100</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div class="box box_back">
+                        <h3>25</h3>
+                        <p>Raising metrics</p>
+                    </div>
+                    <div class="box">
+                        <h3>100%</h3>
+                        <p>Successful implementation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="text_center">
+                    <div class="empty"></div>
+                    <h2>Working with them is one of the best experiences I’ve had with a vendor. Working with them is
+                        one of the best experiences.</h2>
+                    <div class="empty"></div>
+                </div>
+            </div>
+
+        </section>
+        <section class="sect__service">
+            <div class="container">
+                <div class="title__box">
+                    <div class="empty"></div>
+                    <h1 class="big_title">Services</h1>
+                    <a href="./page/service.html" class="btn_transperent">
+                        <img src="./assets/icon/arrov_btn.svg" alt="icon arrow button" />
+                        <p>Services</p>
+                    </a>
+                </div>
+            </div>
+            <div class="container_pd">
+                <ul class="service_list">
+                    <li class="service_item">
+                        <a href="./page/service.html" class="box_left">
+                            <img src="./assets/icon/web-development.svg" alt="web-development icon">
+                            <div class="text"> 
+                                <h3 class="service__title">Web <br> development</h3>
+                                <p class="subtitle">Our teams of technologists, strategists and designers deliver
+                                    powerful digital experiences. We specialize in 11 industries across 55+ countries &
+                                    regions, delivering innovative solutions to our customers’ most challenging
+                                    problems.</p>
+                            </div>
+                        </a>
+                        <div class="box_right">
+                            <a href="./page/serviceCard.html" class="btn_serv purple">
+                                <p>Ecommerce <br> Development</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv purple">
+                                <p>Technical SEO</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv purple">
+                                <p>Website <br> Maintenance <br> and Support</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv purple">
+                                <p>Mobile App Development</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv purple">
+                                <p>Third-Party Service <br> Integration</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service_item">
+                        <a href="./page/service.html" class="box_left">
+                            <img src="./assets/icon/software.svg" alt="software-development icon">
+                            <div class="text"> 
+                                <h3 class="service__title">Software <br> development</h3>
+                                <p class="subtitle">Our teams of technologists, strategists and designers deliver
+                                    powerful digital experiences. We specialize in 11 industries across 55+ countries &
+                                    regions, delivering innovative solutions to our customers’ most challenging
+                                    problems.</p>
+                            </div>
+                        </a>
+                        <div class="box_right">
+                            <a href="./page/serviceCard.html" class="btn_serv blue">
+                                <p>UI/UX Design</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv blue">
+                                <p>Technical SEO</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv blue">
+                                <p>Website <br> Maintenance <br> and Support</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv blue">
+                                <p>Mobile App Development</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv blue">
+                                <p>Third-Party Service <br> Integration</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service_item">
+                        <a href="./page/service.html" class="box_left">
+                            <img src="./assets/icon/digital.svg" alt="software-development icon">
+                            <div class="text"> 
+                                <h3 class="service__title">Digital <br> Marketing</h3>
+                                <p class="subtitle">Our teams of technologists, strategists and designers deliver
+                                    powerful digital experiences. We specialize in 11 industries across 55+ countries &
+                                    regions, delivering innovative solutions to our customers’ most challenging
+                                    problems.</p>
+                            </div>
+                        </a>
+                        <div class="box_right">
+                            <a href="./page/serviceCard.html" class="btn_serv orange">
+                                <p>UI/UX Design</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv orange">
+                                <p>Technical SEO</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv orange">
+                                <p>Website <br> Maintenance <br> and Support</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv orange">
+                                <p>Mobile App Development</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv orange">
+                                <p>Third-Party Service <br> Integration</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="service_item">
+                        <a href="./page/service.html" class="box_left">
+                            <img src="./assets/icon/branding.svg" alt="software-development icon">
+                            <div class="text"> 
+                                <h3 class="service__title">Branding</h3>
+                                <p class="subtitle">Our teams of technologists, strategists and designers deliver
+                                    powerful digital experiences. We specialize in 11 industries across 55+ countries &
+                                    regions, delivering innovative solutions to our customers’ most challenging
+                                    problems.</p>
+                            </div>
+                        </a>
+                        <div class="box_right">
+                            <a href="./page/serviceCard.html" class="btn_serv red">
+                                <p>UI/UX Design</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv red">
+                                <p>Technical SEO</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv red">
+                                <p>Website <br> Maintenance <br> and Support</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv red">
+                                <p>Mobile App Development</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                            <a href="./page/serviceCard.html" class="btn_serv red">
+                                <p>Third-Party Service <br> Integration</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <mask id="mask0_388_64376" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                                        y="0" width="40" height="40">
+                                        <rect width="40" height="40" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_388_64376)">
+                                        <path
+                                            d="M10.4904 29.4071L8.75 27.6667L25.1508 11.25H10.2404V8.75H29.4071V27.9167H26.9071V13.0063L10.4904 29.4071Z"
+                                            fill="white" fill-opacity="0.5" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
 
     <div class="modal" id="modal">
         <div class="modal-content">
@@ -126,8 +570,6 @@
             <p>Contact us form goes here.</p>
         </div>
     </div>
-    <main></main>
-    <footer></footer>
     <script src="./js/script.js"></script>
     <script src="./js/index.js"></script>
 </body>

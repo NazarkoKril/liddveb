@@ -15,6 +15,12 @@
   padding: 0 16px;
 }
 
+.container_pd {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 @media (max-width: 1050px) {
   .container {
     padding: 0 15px;
@@ -61,4 +67,234 @@ img {
   font-weight: 400;
   line-height: 120%;
   letter-spacing: -4.2px;
+}
+
+.btn_blue {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 152px;
+  height: 152px;
+  padding: 4px 4px 4px 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: var(--Colour-Charged-Blue-500, #27c5d9);
+  cursor: pointer;
+  border: transparent;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_blue img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+.btn_blue p {
+  color: var(--Colour-White-1000, #fff);
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+  text-align: start;
+  width: 100%;
+}
+.btn_blue:hover {
+  background: var(--Colour-Charged-Blue-600, #20a1b2);
+}
+.btn_blue:active {
+  background: var(--Colour-Charged-Blue-700, #197f8c);
+}
+.btn_blue:focus {
+  outline: none;
+  border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
+  background: var(--Colour-Charged-Blue-700, #197f8c);
+}
+
+.btn_transperent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 152px;
+  height: 152px;
+  padding: 4px 4px 4px 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_transperent img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+.btn_transperent p {
+  color: var(--Colour-White-1000, #fff);
+  font-family: "IBM Plex Mono";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+  text-align: start;
+  width: 100%;
+}
+.btn_transperent:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+}
+.btn_transperent:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+}
+.btn_transperent:focus {
+  outline: none;
+  border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
+  background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+}
+
+.btn_serv {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 250px;
+  padding: 12px 8px 8px 16px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background-color: transparent;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_serv p {
+  width: 100%;
+  text-align: left;
+  color: var(--Colour-White-500, rgba(255, 255, 255, 0.5));
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  -webkit-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+}
+.btn_serv svg {
+  margin-left: auto;
+  margin-right: 0px;
+}
+.btn_serv svg path {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_serv:hover, .btn_serv:active, .btn_serv:focus {
+  outline: none;
+}
+.btn_serv:hover p, .btn_serv:active p, .btn_serv:focus p {
+  color: var(--Colour-White-1000, #fff);
+}
+.btn_serv:hover svg path, .btn_serv:active svg path, .btn_serv:focus svg path {
+  fill: white;
+  fill-opacity: 1;
+}
+.btn_serv.purple {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_serv.purple:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: #b366ff;
+}
+.btn_serv.purple:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: #a15ce5;
+}
+.btn_serv.purple:focus {
+  outline: none;
+  border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
+  background: #a15ce5;
+}
+.btn_serv.blue {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_serv.blue:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: #5ce5e5;
+}
+.btn_serv.blue:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: #52cccc;
+}
+.btn_serv.blue:focus {
+  outline: none;
+  border: 2px solid var(--Colour-Charged-Blue-500, #27c5d9);
+  background: #52cccc;
+}
+.btn_serv.orange {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_serv.orange:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: #ffb366;
+}
+.btn_serv.orange:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: #e5a15c;
+}
+.btn_serv.orange:focus {
+  outline: none;
+  border: 2px solid var(--Colour-Charged-Blue-500, #27c5d9);
+  background: #e5a15c;
+}
+.btn_serv.red {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_serv.red:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: #f66;
+}
+.btn_serv.red:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: #e55c5c;
+}
+.btn_serv.red:focus {
+  outline: none;
+  border: 2px solid var(--Colour-Charged-Blue-500, #27c5d9);
+  background: #e55c5c;
 }
