@@ -6,6 +6,8 @@
 // header-----------------------------------------------------------------------------
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -14,6 +16,8 @@
   padding: 16px;
   z-index: 99999;
 }
+
+
 
 .header__container {
   display: grid;
