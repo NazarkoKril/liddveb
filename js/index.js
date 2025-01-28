@@ -68,7 +68,7 @@ style.textContent = `
     left: 0;
     width: 100%;
     z-index: 1000;
-    transition: transform 0.3s ease-in, transform 0.5s ease-out;
+    transition: transform 0.6s ease-in-out;
   }
   .header.hidden {
     transform: translateY(-100%);
