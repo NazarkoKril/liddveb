@@ -424,9 +424,9 @@
   width: 100%;
 }
 .box_center {
-  margin-top: 40px;
+  margin-top: 60px;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   .flex {
     display: flex;
     align-items: center;
@@ -439,12 +439,12 @@
     gap: 20px;
     align-items: start;
     width: 100%;
-    max-width: 320px;
+   max-width: 425px;
   }
   h3 {
     color: var(--Colour-Charged-Blue-500, #27c5d9);
     font-family: "IBM Plex Mono";
-    font-size: 30px;
+    font-size: clamp(30px, 2.083vw, 40px);
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 30px */
@@ -454,18 +454,13 @@
   p {
     color: var(--Colour-White-800, rgba(255, 255, 255, 0.8));
     font-family: "IBM Plex Sans";
-    font-size: 14px;
+    font-size: clamp(14px, 2.083vw, 18.6px);
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
   }
 }
-.grid4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.sect__hero_main {
-  padding-bottom: 100px;
+.sect_hero2{
   .grid4 {
     margin-top: 115px;
     .box {
@@ -497,6 +492,19 @@
     }
   }
 }
+
+.grid4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.sect__hero_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+ position: relative;
+}
 .text_center {
   margin-top: 60px;
   display: grid;
@@ -506,7 +514,7 @@
   h2 {
     color: #fff;
     font-family: "IBM Plex Sans";
-    font-size: 32px;
+    font-size: clamp(32px, 2.083vw, 35px);
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 48px */
@@ -574,7 +582,7 @@
     display: flex;
     flex-direction: column;
     gap: 28px;
-    h3 {
+    .service__title {
       color: var(--Colour-White-1000, #fff);
       font-family: "IBM Plex Sans";
       font-size: 40px;
@@ -586,9 +594,9 @@
     .subtitle {
       color: var(--Colour-White-800, rgba(255, 255, 255, 0.8));
       width: 100%;
-      max-width: 320px;
+      max-width: 400px;
       font-family: "IBM Plex Sans";
-      font-size: 14px;
+      font-size: 18.6px;
       font-style: normal;
       font-weight: 400;
       line-height: 20px;
@@ -623,4 +631,15 @@
   opacity: 1;
   transform: translateY(0);
   transition-delay: 0.5s; 
+}
+
+#scene-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 10;
 }

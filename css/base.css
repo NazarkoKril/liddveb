@@ -101,7 +101,6 @@ img {
 .btn_blue p {
   color: var(--Colour-White-1000, #fff);
   font-family: "IBM Plex Mono";
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
@@ -153,7 +152,7 @@ img {
 .btn_transperent p {
   color: var(--Colour-White-1000, #fff);
   font-family: "IBM Plex Mono";
-  font-size: 16px;
+  font-size: 21.2px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
