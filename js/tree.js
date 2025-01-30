@@ -5,6 +5,13 @@ let targetRotation = { x: 0, y: 0 };
 let currentRotation = { x: 0, y: 0 };
 const lerpSpeed = 0.03;
 
+function getCameraPosition() {
+    const width = window.innerWidth;
+    if (width > 1440) return 5;
+    if (width > 900) return 6;
+    return 7;
+}
+
 function init() {
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(
@@ -13,7 +20,8 @@ function init() {
         0.1,
         1000
     );
-    camera.position.set(0, 0, 6.3);
+    camera.position.set(0, 0, getCameraPosition());
+
 
     renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
