@@ -9,7 +9,7 @@
   outline: none;
 }
 *:focus {
-  border: 1px solid var(--Colour-Charged-Blue-500, #27C5D9) !important;
+  border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9) !important;
 }
 
 html {
@@ -142,7 +142,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: var(--Colour-Charged-Blue-500, #FFF);
+  background: var(--Colour-Charged-Blue-500, #fff);
   cursor: pointer;
   border: transparent;
   -webkit-box-align: start;
@@ -158,7 +158,7 @@ img {
   margin-left: auto;
 }
 .btn_white p {
-  color: var(--Colour-White-1000, #27C5D9);
+  color: var(--Colour-White-1000, #27c5d9);
   font-family: "IBM Plex Mono";
   font-style: normal;
   font-weight: 400;
@@ -234,7 +234,8 @@ img {
 }
 
 @media (min-width: 1440px) {
-  .btn_blue, .btn_transperent {
+  .btn_blue,
+  .btn_transperent {
     width: 200px;
     height: 200px;
   }
@@ -364,7 +365,7 @@ img {
 }
 
 .tag {
-  border: 0.5px solid gray;
+  border: 1px solid gray;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,26 +389,210 @@ img {
   text-transform: uppercase;
 }
 .tag.purple {
-  border: 0.5px solid rgba(179, 102, 255, 0.4);
+  border: 1px solid rgba(179, 102, 255, 0.4);
   color: rgba(179, 102, 255, 0.8);
 }
 .tag.green {
-  border: 0.5px solid rgba(102, 255, 102, 0.4);
+  border: 1px solid rgba(102, 255, 102, 0.4);
   color: rgba(102, 255, 102, 0.8);
 }
 .tag.rose {
-  border: 0.5px solid rgba(255, 102, 191, 0.4);
+  border: 1px solid rgba(255, 102, 191, 0.4);
   color: rgba(255, 102, 191, 0.8);
 }
 .tag.blue {
-  border: 0.5px solid rgba(102, 255, 255, 0.4);
+  border: 1px solid rgba(102, 255, 255, 0.4);
   color: rgba(102, 255, 255, 0.8);
 }
 .tag.orange {
-  border: 0.5px solid rgba(255, 179, 102, 0.4);
+  border: 1px solid rgba(255, 179, 102, 0.4);
   color: rgba(255, 179, 102, 0.8);
 }
 .tag.red {
-  border: 0.5px solid rgba(255, 102, 102, 0.4);
+  border: 1px solid rgba(255, 102, 102, 0.4);
   color: rgba(255, 102, 102, 0.8);
+}
+
+.input_default {
+  background-color: transparent;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  padding: 10px 10px 10px 12px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--Colour-White-300, rgba(255, 255, 255, 0.3));
+  color: #fff;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 142.857% */
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.input_default::-webkit-input-placeholder {
+  color: var(--Colour-White-500, rgba(255, 255, 255, 0.5));
+}
+.input_default::-moz-placeholder {
+  color: var(--Colour-White-500, rgba(255, 255, 255, 0.5));
+}
+.input_default:-ms-input-placeholder {
+  color: var(--Colour-White-500, rgba(255, 255, 255, 0.5));
+}
+.input_default::-ms-input-placeholder {
+  color: var(--Colour-White-500, rgba(255, 255, 255, 0.5));
+}
+.input_default::placeholder {
+  color: var(--Colour-White-500, rgba(255, 255, 255, 0.5));
+}
+.input_default:hover {
+  border: 1px solid var(--Colour-White-1000, #fff);
+}
+
+.select_work {
+  background-color: transparent;
+  height: 40px;
+  padding: 8px 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  color: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.select_work.checked {
+  background: var(--Colour-White-1000, #fff) !important;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  border: 1px solid transparent !important;
+}
+.select_work.checked:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-900, rgba(255, 255, 255, 0.8));
+}
+.select_work.checked:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-800, rgba(255, 255, 255, 0.9));
+}
+.select_work:hover {
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+}
+.select_work:active {
+  background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+}
+.select_work.purple {
+  border: 1px solid rgba(179, 102, 255, 0.8);
+  color: rgba(179, 102, 255, 0.8);
+}
+.select_work.purple.checked {
+  color: rgb(189, 128, 250);
+}
+.select_work.green {
+  border: 1px solid rgba(102, 255, 102, 0.4);
+  color: rgba(102, 255, 102, 0.8);
+}
+.select_work.green.checked {
+  color: rgba(102, 255, 102, 0.4);
+}
+.select_work.rose {
+  border: 1px solid rgba(255, 102, 191, 0.4);
+  color: rgba(255, 102, 191, 0.8);
+}
+.select_work.rose.checked {
+  color: rgba(255, 102, 191, 0.4);
+}
+.select_work.blue {
+  border: 1px solid rgba(102, 255, 255, 0.8);
+  color: rgba(102, 255, 255, 0.8);
+}
+.select_work.blue.checked {
+  color: rgb(117, 214, 214);
+}
+.select_work.orange {
+  border: 1px solid rgba(204, 143, 82, 0.8);
+  color: rgba(255, 179, 102, 0.8);
+}
+.select_work.orange.checked {
+  color: rgb(209, 161, 112);
+}
+.select_work.red {
+  border: 1px solid rgba(255, 102, 102, 0.8);
+  color: rgba(255, 102, 102, 0.8);
+}
+.select_work.red.checked {
+  color: rgb(255, 133, 133);
+}
+
+.select_price {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  padding: 8px 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  color: var(--Colour-White-1000, #fff);
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.select_price:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+}
+.select_price:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+}
+.select_price.checked {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-1000, #fff);
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  color: var(--Colour-Charged-Blue-500, #27c5d9);
+}
+.select_price.checked:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-900, rgba(255, 255, 255, 0.9));
+}
+.select_price.checked:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-800, rgba(255, 255, 255, 0.8));
 }
