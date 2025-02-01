@@ -880,6 +880,9 @@
   line-height: 1.5;
 }
 
+.sect_hero2 {
+  padding-bottom: 100px;
+}
 .sect_hero2 .grid4 {
   margin-top: 115px;
 }
@@ -993,13 +996,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  -webkit-transition: var(--trans);
-  transition: var(--trans);
   overflow: hidden;
   height: 200px;
   position: relative;
-  -webkit-transition: height 0.6s ease-in-out;
-  transition: height 0.6s ease-in-out;
+  -webkit-transition: var(--trans), height 0.6s ease-in-out;
+  transition: var(--trans), height 0.6s ease-in-out;
 }
 .service_item:hover {
   border-top: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
@@ -1009,7 +1010,7 @@
   border-top: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
   background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
 }
-.service_item:focus {
+.service_item:focus-visible {
   outline: none;
   border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
   background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
@@ -1019,7 +1020,7 @@
   grid-template-columns: 1fr 1fr;
   padding: 16px 0px 0px 16px;
 }
-.service_item .box_left:focus {
+.service_item .box_left:focus-visible {
   outline: none;
   background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
 }
@@ -1054,7 +1055,7 @@
   font-size: 18.6px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.5;
 }
 .service_item .box_right {
   display: grid;
@@ -1133,7 +1134,7 @@
 .quote_btn:active {
   opacity: 0.9;
 }
-.quote_btn:focus {
+.quote_btn:focus-visible {
   opacity: 0.9;
 }
 .quote_btn .circle {
@@ -1507,7 +1508,7 @@
 .box__fedback .next_feedback,
 .box__fedback .prev_feedback {
   background-image: url("../assets/icon/arrow_slide.svg") !important;
-  background-size: contain !important;
+  background-size: 24px !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   width: 40px !important;
@@ -1744,7 +1745,7 @@
 .faq_item:active {
   background: var(--Colour-White-100, rgba(255, 255, 255, 0.05));
 }
-.faq_item:focus {
+.faq_item:focus-visible {
   border: 2px solid var(--Colour-Charged-Blue-500, #27c5d9);
 }
 

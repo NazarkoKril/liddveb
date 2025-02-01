@@ -6,7 +6,8 @@
   text-decoration: none;
   list-style: none;
   outline: none;
-  &:focus {
+  border: 1px solid transparent;
+  &:focus-visible {
     border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9) !important;
   }
 }
@@ -134,7 +135,7 @@ img {
   &:active {
     background: var(--Colour-Charged-Blue-700, #197f8c);
   }
-  &:focus {
+  &:focus-visible {
     outline: none;
     border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
     background: var(--Colour-Charged-Blue-700, #197f8c);
@@ -174,7 +175,7 @@ img {
   &:active {
     background: var(--Colour-White-800, rgba(255, 255, 255, 0.8));
   }
-  &:focus {
+  &:focus-visible {
     outline: none;
     border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
     background: var(--Colour-White-800, rgba(255, 255, 255, 0.8));
@@ -217,7 +218,7 @@ img {
     border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
     background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
   }
-  &:focus {
+  &:focus-visible {
     outline: none;
     border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
     background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
@@ -263,7 +264,7 @@ img {
   }
   &:hover,
   &:active,
-  &:focus {
+  &:focus-visible {
     outline: none;
     p {
       color: var(--Colour-White-1000, #fff);
@@ -283,7 +284,7 @@ img {
       border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
       background: #a15ce5;
     }
-    &:focus {
+    &:focus-visible {
       outline: none;
       border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
       background: #a15ce5;
@@ -299,7 +300,7 @@ img {
       border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
       background: #52cccc;
     }
-    &:focus {
+    &:focus-visible {
       outline: none;
       border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
       background: #52cccc;
@@ -315,7 +316,7 @@ img {
       border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
       background: #e5a15c;
     }
-    &:focus {
+    &:focus-visible {
       outline: none;
       border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
       background: #e5a15c;
@@ -331,7 +332,7 @@ img {
       border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
       background: #e55c5c;
     }
-    &:focus {
+    &:focus-visible {
       outline: none;
       border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
       background: #e55c5c;
