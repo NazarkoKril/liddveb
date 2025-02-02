@@ -6,7 +6,6 @@
   text-decoration: none;
   list-style: none;
   outline: none;
-  border: 1px solid transparent;
   &:focus-visible {
     border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9) !important;
   }
@@ -232,6 +231,7 @@ img {
   }
 }
 .btn_serv {
+  aspect-ratio: 1/1;
   cursor: pointer;
   display: flex;
   width: 100%;
@@ -404,6 +404,7 @@ img {
   }
 }
 .select_work {
+  text-wrap: nowrap;
   background-color: transparent;
   height: 40px;
   padding: 8px 12px;
