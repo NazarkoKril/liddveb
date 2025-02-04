@@ -16,6 +16,10 @@ html {
   overflow-x: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1920px;
@@ -47,6 +51,22 @@ img {
   display: block;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27c5d9;
+  border-radius: 3px;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
 .big_title {
   color: var(--Colour-White-1000, #fff);
   font-family: "IBM Plex Sans";
@@ -55,8 +75,14 @@ img {
   font-weight: 400;
   line-height: 80%;
   letter-spacing: -20px;
+  padding-right: 25px;
 }
 
+@media (max-width: 1100px) {
+  .big_title {
+    font-size: 150px;
+  }
+}
 .mid_title {
   color: var(--Colour-White-1000, #fff);
   font-family: "IBM Plex Sans";
@@ -365,6 +391,11 @@ img {
   background: #e55c5c;
 }
 
+@media (max-width: 1300px) {
+  .btn_serv {
+    height: 200px;
+  }
+}
 .tag {
   border: 1px solid gray;
   display: -webkit-box;
