@@ -629,3 +629,40 @@ img {
   border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
   background: var(--Colour-White-800, rgba(255, 255, 255, 0.8));
 }
+
+.btn40 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 4px 8px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  border: 1px solid transparent;
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+  -webkit-transition: var(--text);
+  transition: var(--text);
+  cursor: pointer;
+}
+.btn40:hover {
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.1));
+}
+.btn40:active {
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.2));
+}
+.btn40:focus {
+  border: 1px solid #27C5D9;
+}
+.btn40 img {
+  width: 24px;
+  height: 24px;
+}
+.btn40.active {
+  background: var(--Colour-Charged-Blue-500, #27C5D9);
+}

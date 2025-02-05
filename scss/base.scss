@@ -543,3 +543,32 @@ img {
     }
   }
 }
+.btn40{
+  display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 4px 8px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 1px solid transparent;
+    background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+    transition: var(--text);
+    cursor: pointer;
+    &:hover {
+      background: var(--Colour-White-50, rgba(255, 255, 255, 0.1));
+    }
+    &:active {
+      background: var(--Colour-White-50, rgba(255, 255, 255, 0.2));
+    }
+    &:focus{
+      border: 1px solid #27C5D9;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    &.active{
+background: var(--Colour-Charged-Blue-500, #27C5D9);
+    }
+}

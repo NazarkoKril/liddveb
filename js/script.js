@@ -9,6 +9,18 @@ burger?.addEventListener("click", () => {
   document.body.classList.toggle("no-scroll", disableScroll);
   document.documentElement.classList.toggle("no-scroll", disableScroll);
 });
+// Burger Toggle
+const burgerMob = document.getElementById("burger_mob");
+const menuMob = document.getElementById("menu_mob");
+
+burgerMob?.addEventListener("click", () => {
+  menuMob?.classList.toggle("active");
+  burgerMob?.classList.toggle("open");
+  const disableScroll = menuMob?.classList.contains("active");
+  document.body.classList.toggle("no-scroll", disableScroll);
+  document.documentElement.classList.toggle("no-scroll", disableScroll);
+});
+
 
 
 // Language Dropdown
