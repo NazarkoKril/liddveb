@@ -17,7 +17,7 @@ html {
 }
 
 .no-scroll {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .container {
