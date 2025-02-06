@@ -669,8 +669,8 @@ img {
 
 @media (max-width: 700px) {
   .btn_blue, .btn_white, .btn_transperent {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
   }
   .btn_blue p, .btn_white p, .btn_transperent p {
     font-size: 14px;

@@ -55,7 +55,7 @@ function init() {
     new THREE.GLTFLoader().load("./model/LiddWeb.gltf", function (gltf) {
         model = gltf.scene;
         model.scale.set(0.1, 0.1, 0.1);
-        model.position.set(0,getModelPositionY(), 0);
+        model.position.set(0.15,getModelPositionY(), 0);
         model.rotation.set(0, 0, 0);
 
         model.traverse((child) => {
