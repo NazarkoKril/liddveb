@@ -105,6 +105,8 @@ img {
   letter-spacing: -4.2px;
 }
 
+
+
 .btn_blue {
   display: flex;
   width: 152px;
@@ -571,4 +573,46 @@ img {
     &.active{
 background: var(--Colour-Charged-Blue-500, #27C5D9);
     }
+}
+
+@media (max-width:700px) {
+  .btn_blue, .btn_white, .btn_transperent{
+    width: 100px;
+    height: 100px;
+    p{
+      font-size: 14px;
+    }
+  }
+.big_title{
+  color: var(--Colour-White-1000, #FFF);
+
+font-family: "IBM Plex Sans";
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 72px */
+letter-spacing: -4.2px;
+}
+.small_title{
+  color: var(--Colour-White-1000, #FFF);
+
+/* Typography/Title/Large */
+font-family: "IBM Plex Sans";
+font-size: 40px;
+font-style: normal;
+font-weight: 300;
+line-height: 100%; /* 40px */
+letter-spacing: -2.4px;
+}
+.mid_title{
+  color: var(--Colour-White-1000, #FFF);
+
+  /* Typography/Header/Small */
+  font-family: "IBM Plex Sans";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 72px */
+  letter-spacing: -4.2px;
+}
 }

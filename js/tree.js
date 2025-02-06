@@ -11,7 +11,15 @@ function getCameraPosition() {
     if (width > 1100) return 6;
     if (width > 900) return 7;
     if (width > 600) return 8;
-    return 12;
+    return 7;
+}
+
+function getModelPositionY() {
+    const width = window.innerWidth;
+    if (width > 1440) return 0.5;
+    if (width > 900) return 0.5;
+    if (width > 300) return 0.9;
+    return 0;
 }
 
 function init() {
@@ -47,7 +55,7 @@ function init() {
     new THREE.GLTFLoader().load("./model/LiddWeb.gltf", function (gltf) {
         model = gltf.scene;
         model.scale.set(0.1, 0.1, 0.1);
-        model.position.set(0, 0.5, 0);
+        model.position.set(0,getModelPositionY(), 0);
         model.rotation.set(0, 0, 0);
 
         model.traverse((child) => {
