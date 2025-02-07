@@ -259,9 +259,103 @@ img {
   background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
 }
 
+.btn_transperent_animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 152px;
+  height: 152px;
+  padding: 4px 4px 4px 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.btn_transperent_animation img {
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+  margin-left: auto;
+  -webkit-animation: jump 2s ease-in-out infinite;
+          animation: jump 2s ease-in-out infinite;
+}
+.btn_transperent_animation p {
+  color: var(--Colour-White-1000, #fff);
+  font-family: "IBM Plex Mono";
+  font-size: 21.2px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+  text-align: start;
+  width: 100%;
+}
+.btn_transperent_animation:hover {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+}
+.btn_transperent_animation:active {
+  border: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+  background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+}
+.btn_transperent_animation:focus-visible {
+  outline: none;
+  border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9);
+  background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  40% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  20% {
+    -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+  }
+  40% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 @media (min-width: 1440px) {
   .btn_blue,
-  .btn_transperent {
+  .btn_transperent,
+  .btn_transperent_animation {
     width: 200px;
     height: 200px;
   }
