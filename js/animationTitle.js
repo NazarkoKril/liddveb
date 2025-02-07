@@ -22,7 +22,7 @@ class TextAnimator {
     }
 
     getRandomDelay() {
-        return Math.random() * 350 + 400;
+        return Math.random() * 150 + 200;
     }
 
     updateGradient(currentIndex, spans) {
