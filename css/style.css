@@ -955,7 +955,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100dvh;
+  height: 100vh;
   position: relative;
 }
 
@@ -1137,22 +1137,17 @@
 
 #scene-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 50%;
-  -webkit-transform: translate(-50%, -105%);
-          transform: translate(-50%, -105%);
+  height: 100vh;
   pointer-events: none;
   z-index: 10;
 }
-
-@media (max-width: 600px) {
-  #scene-container {
-    -webkit-transform: translate(-50%, -96%);
-            transform: translate(-50%, -96%);
-  }
+#scene-container canvas {
+  height: 100% !important;
 }
+
 .quote_btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2747,7 +2742,7 @@
     margin-left: auto;
   }
   .heigth {
-    height: 100dvh;
+    height: 100svh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

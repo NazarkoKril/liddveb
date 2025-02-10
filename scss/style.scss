@@ -746,7 +746,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100dvh;
+  height: 100vh;
   position: relative;
 }
 .text_center {
@@ -895,19 +895,18 @@
 
 #scene-container {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 50%;
-  transform: translate(-50%, -105%);
+  height: 100vh;
   pointer-events: none;
   z-index: 10;
+  canvas{
+    height: 100% !important;
+  }
 }
-@media (max-width:600px) {
-  #scene-container {
-   transform: translate(-50%, -96%);
-}
-}
+
+
 .quote_btn {
   display: flex;
   align-items: center;
@@ -2168,7 +2167,7 @@ margin-right: 0px;
 margin-left: auto;
   }
   .heigth{
-    height: 100vh;
+    height: 100svh;
     display: flex;
     align-items: center;
   justify-content: space-between;

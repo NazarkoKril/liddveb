@@ -114,23 +114,24 @@ document.addEventListener("click", function (e) {
 // Header Scroll Behavior
 const style = document.createElement("style");
 style.textContent = `
-      .header {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1000;
-        transition: transform 0.6s ease-in-out;
-      }
-      .header.hidden {
-        transform: translateY(-100%);
-      }
-    `;
+ .header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   transition: transform 0.6s ease-in-out;
+ }
+ .header.hidden {
+   transform: translateY(-100%);
+ }
+`;
 document.head.appendChild(style);
 
 let lastScrollPosition = 0;
 let ticking = false;
 const header = document.querySelector(".header");
+const SCROLL_THRESHOLD = 40;
 
 if (header) {
   window.addEventListener("scroll", () => {
@@ -138,15 +139,16 @@ if (header) {
 
     if (!ticking) {
       window.requestAnimationFrame(() => {
-        if (currentScrollPosition > lastScrollPosition) {
-          header.classList.add("hidden");
-        } else {
-          header.classList.remove("hidden");
+        if (Math.abs(currentScrollPosition - lastScrollPosition) >= SCROLL_THRESHOLD) {
+          if (currentScrollPosition > lastScrollPosition) {
+            header.classList.add("hidden");
+          } else {
+            header.classList.remove("hidden");
+          }
+          lastScrollPosition = currentScrollPosition;
         }
-        lastScrollPosition = currentScrollPosition;
         ticking = false;
       });
-
       ticking = true;
     }
   });
