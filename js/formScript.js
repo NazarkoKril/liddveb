@@ -45,7 +45,7 @@ openModalButtons.forEach(button => {
     e.stopPropagation();
 
     if (window.innerWidth <= 950) {
-      window.location.href = "./page/mobileForm.html"; 
+      window.location.href = "../page/mobileForm.html"; 
     } else {
       openModal(modalMain);
     }

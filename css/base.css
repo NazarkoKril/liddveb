@@ -237,7 +237,7 @@ img {
 .btn_transperent p {
   color: var(--Colour-White-1000, #fff);
   font-family: "IBM Plex Mono";
-  font-size: 21.2px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
@@ -260,6 +260,9 @@ img {
 }
 
 .btn_transperent_animation {
+  position: absolute;
+  top: -5%;
+  left: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -293,7 +296,7 @@ img {
 .btn_transperent_animation p {
   color: var(--Colour-White-1000, #fff);
   font-family: "IBM Plex Mono";
-  font-size: 21.2px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 24px */
@@ -352,12 +355,51 @@ img {
             transform: translateY(0);
   }
 }
+@media (max-width: 1300px) {
+  .btn_transperent_animation {
+    top: -10%;
+  }
+}
+@media (max-width: 1100px) {
+  .btn_transperent_animation {
+    top: -20%;
+  }
+}
+@media (max-width: 950px) {
+  .btn_transperent_animation {
+    top: -30%;
+  }
+}
+@media (max-width: 800px) {
+  .btn_transperent_animation {
+    top: -45%;
+  }
+}
+@media (max-width: 650px) {
+  .btn_transperent_animation {
+    top: auto;
+    left: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 120px;
+    height: 120px;
+  }
+  .btn_transperent_animation p {
+    width: 80px;
+  }
+}
 @media (min-width: 1440px) {
   .btn_blue,
   .btn_transperent,
   .btn_transperent_animation {
     width: 200px;
     height: 200px;
+  }
+  .btn_blue p,
+  .btn_transperent p,
+  .btn_transperent_animation p {
+    font-size: 21px;
   }
 }
 .btn_serv {
