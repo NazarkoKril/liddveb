@@ -10,7 +10,7 @@
     border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9) !important;
   }
 }
-html {
+html, body {
   overflow-x: hidden;
 }
 
@@ -81,6 +81,7 @@ img {
   line-height: 80%;
   letter-spacing: -20px;
   padding-right: 25px;
+  white-space: nowrap;
 }
 @media (max-width:1100px) {
   .big_title{
@@ -95,6 +96,7 @@ img {
   font-weight: 400;
   line-height: 100%;
   letter-spacing: -8px;
+  white-space: nowrap;
 }
 .small_title {
   color: var(--Colour-White-1000, #fff);
