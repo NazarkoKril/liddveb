@@ -12,7 +12,8 @@
   border: 1px solid var(--Colour-Charged-Blue-500, #27c5d9) !important;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -677,7 +678,7 @@ img {
   color: rgba(255, 255, 255, 0.8);
 }
 .select_work.white.checked {
-  color: #020D12;
+  color: #020d12;
 }
 .select_work.purple {
   border: 1px solid rgba(179, 102, 255, 0.8);
@@ -795,21 +796,21 @@ img {
   transition: var(--text);
   cursor: pointer;
 }
-.btn40:not(.disable):hover {
+.btn40:not(.disable):not(.active):hover {
   background: var(--Colour-White-50, rgba(255, 255, 255, 0.1));
 }
-.btn40:not(.disable):active {
+.btn40:not(.disable):not(.active):active {
   background: var(--Colour-White-50, rgba(255, 255, 255, 0.2));
 }
-.btn40:not(.disable):focus {
-  border: 1px solid #27C5D9;
+.btn40:not(.disable):not(.active):focus-visible {
+  border: 1px solid #27c5d9;
 }
 .btn40 img {
   width: 24px;
   height: 24px;
 }
 .btn40.active {
-  background: var(--Colour-Charged-Blue-500, #27C5D9);
+  background: var(--Colour-Charged-Blue-500, #27c5d9);
 }
 .btn40.disable {
   cursor: default;
@@ -820,15 +821,19 @@ img {
 }
 
 @media (max-width: 700px) {
-  .btn_blue, .btn_white, .btn_transperent {
+  .btn_blue,
+  .btn_white,
+  .btn_transperent {
     width: 120px;
     height: 120px;
   }
-  .btn_blue p, .btn_white p, .btn_transperent p {
+  .btn_blue p,
+  .btn_white p,
+  .btn_transperent p {
     font-size: 14px;
   }
   .big_title {
-    color: var(--Colour-White-1000, #FFF);
+    color: var(--Colour-White-1000, #fff);
     font-family: "IBM Plex Sans";
     font-size: 60px;
     font-style: normal;
@@ -837,7 +842,7 @@ img {
     letter-spacing: -4.2px;
   }
   .small_title {
-    color: var(--Colour-White-1000, #FFF);
+    color: var(--Colour-White-1000, #fff);
     /* Typography/Title/Large */
     font-family: "IBM Plex Sans";
     font-size: 40px;
@@ -847,7 +852,7 @@ img {
     letter-spacing: -2.4px;
   }
   .mid_title {
-    color: var(--Colour-White-1000, #FFF);
+    color: var(--Colour-White-1000, #fff);
     /* Typography/Header/Small */
     font-family: "IBM Plex Sans";
     font-size: 60px;
