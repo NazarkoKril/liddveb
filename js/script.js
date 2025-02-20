@@ -88,9 +88,12 @@ document.querySelectorAll(".select_price").forEach((button) => {
   });
 });
 //selector
-document.querySelector(".select-box").addEventListener("click", function () {
-  const dropdown = this.closest(".select-wrapper");
-  dropdown.classList.toggle("active");
+document.querySelectorAll(".select-box").forEach((selectBox) => {
+  selectBox.addEventListener("click", function (e) {
+    e.stopPropagation();
+    const dropdown = this.closest(".select-wrapper");
+    dropdown.classList.toggle("active");
+  });
 });
 
 document.querySelectorAll(".dropdown-item").forEach((item) => {

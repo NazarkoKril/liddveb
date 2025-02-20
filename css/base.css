@@ -391,7 +391,7 @@ img {
     width: 80px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .btn_blue,
   .btn_transperent,
   .btn_transperent_animation {
@@ -672,6 +672,13 @@ img {
 .select_work:active {
   background: var(--Colour-White-100, rgba(255, 255, 255, 0.1));
 }
+.select_work.white {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+.select_work.white.checked {
+  color: #020D12;
+}
 .select_work.purple {
   border: 1px solid rgba(179, 102, 255, 0.8);
   color: rgba(179, 102, 255, 0.8);
@@ -788,13 +795,13 @@ img {
   transition: var(--text);
   cursor: pointer;
 }
-.btn40:hover {
+.btn40:not(.disable):hover {
   background: var(--Colour-White-50, rgba(255, 255, 255, 0.1));
 }
-.btn40:active {
+.btn40:not(.disable):active {
   background: var(--Colour-White-50, rgba(255, 255, 255, 0.2));
 }
-.btn40:focus {
+.btn40:not(.disable):focus {
   border: 1px solid #27C5D9;
 }
 .btn40 img {
@@ -803,6 +810,13 @@ img {
 }
 .btn40.active {
   background: var(--Colour-Charged-Blue-500, #27C5D9);
+}
+.btn40.disable {
+  cursor: default;
+  color: var(--Colour-White-500, rgba(255, 255, 255, 0.5));
+}
+.btn40.disable svg path {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width: 700px) {

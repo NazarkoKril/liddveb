@@ -332,7 +332,7 @@ img {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1441px) {
   .btn_blue,
   .btn_transperent,
   .btn_transperent_animation {
@@ -562,7 +562,13 @@ img {
 &:active{
   background: var(--Colour-White-100, rgba(255, 255, 255, 0.10));
 }
-
+&.white {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  &.checked{
+    color: #020D12;
+  }
+}
   &.purple {
     border: 1px solid rgba(179, 102, 255, 0.80);
     color: rgba(179, 102, 255, 0.8);
@@ -664,13 +670,13 @@ img {
     background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
     transition: var(--text);
     cursor: pointer;
-    &:hover {
+    &:not(.disable):hover {
       background: var(--Colour-White-50, rgba(255, 255, 255, 0.1));
     }
-    &:active {
+    &:not(.disable):active {
       background: var(--Colour-White-50, rgba(255, 255, 255, 0.2));
     }
-    &:focus{
+    &:not(.disable):focus{
       border: 1px solid #27C5D9;
     }
     img {
@@ -679,6 +685,13 @@ img {
     }
     &.active{
 background: var(--Colour-Charged-Blue-500, #27C5D9);
+    }
+    &.disable{
+      cursor: default;
+      color: var(--Colour-White-500, rgba(255, 255, 255, 0.50));
+      svg path {
+        fill:  rgba(255, 255, 255, 0.50);
+      }
     }
 }
 

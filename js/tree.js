@@ -84,7 +84,7 @@ function init() {
         function animate() {
             requestAnimationFrame(animate);
             if (model) {
-                autoRotation += 0.01;
+                autoRotation += 0.005;
                 model.position.set(0, getModelPositionY(), 0);
                 model.rotation.set(0.13, autoRotation, 0);
             }
