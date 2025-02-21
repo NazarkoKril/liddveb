@@ -4125,10 +4125,19 @@ text-transform: uppercase;
   }
 }
 @media (max-width: 700px) {
-  
+  .sect_hero_port{
+    align-items: start;
+    justify-content: space-between;
+    margin-top:  0px;
+    padding-top: 50px;
+    flex-direction: column;
+    height: 100svh;
+  }
   .hero_photo_portfolio{
-    height: 50vh;
-    
+position: relative;
+    height: 370px;
+    top: auto;
+    left: auto;
   }
   .sect_feedback.portfolio .slide_feedback{
     grid-template-columns: 1fr !important;
