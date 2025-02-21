@@ -47,54 +47,7 @@ if (buttons.length && texts.length) {
 
 window.addEventListener("load", updateQuoteContainerHeight);
 window.addEventListener("resize", updateQuoteContainerHeight);
-// lichulnuk
 
-document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".grid4 .box h3");
-  
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const counter = entry.target;
-            const target = parseFloat(counter.dataset.target);
-            const duration = parseInt(counter.dataset.duration);
-            const isPercent =
-              counter.dataset.percent === "true" ||
-              counter.innerHTML.includes("%");
-            let startTime = null;
-  
-            const step = (timestamp) => {
-              if (!startTime) startTime = timestamp;
-              const progress = timestamp - startTime;
-              const progressRatio = Math.min(progress / duration, 1);
-              const currentVal = Math.floor(progressRatio * target);
-              counter.textContent = currentVal + (isPercent ? "%" : "");
-              if (progress < duration) {
-                requestAnimationFrame(step);
-              } else {
-                counter.textContent = target + (isPercent ? "%" : "");
-              }
-            };
-  
-            requestAnimationFrame(step);
-            observer.unobserve(counter);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-  
-    counters.forEach((counter) => {
-      if (!counter.dataset.target)
-        counter.dataset.target = counter.innerHTML.replace("%", "");
-      if (!counter.dataset.duration) counter.dataset.duration = "2000";
-      const isPercent = counter.innerHTML.includes("%");
-      counter.dataset.percent = isPercent ? "true" : "false";
-      counter.textContent = "0" + (isPercent ? "%" : "");
-      observer.observe(counter);
-    });
-  });
   
 // Swiper feedback ------------
     const swiper = new Swiper(".swiper_feedback", {

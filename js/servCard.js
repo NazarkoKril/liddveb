@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 600);
   }
 });
+
 // animate Process
 const wrapper = document.querySelector(".wrapper");
 const container = document.querySelector(".box_proc");
@@ -117,7 +118,8 @@ function updateProgress() {
   const percentage = (scrolled / maxScroll) * 100;
   progressBar.style.width = `${percentage}%`;
 }
-//impact ---------
+
+// impact ---------
 document.addEventListener("DOMContentLoaded", () => {
   const openDelay = 400;
   const cards = document.querySelectorAll(".impact_cart");
@@ -206,7 +208,12 @@ function triggerAnimationsWhenVisible(card) {
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
-  return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
 }
 
 function triggerAnimations(card) {
@@ -215,7 +222,8 @@ function triggerAnimations(card) {
 }
 
 function animateNumbers(card) {
-  const numbers = card.querySelectorAll(".value .number");
+  // Змінили селектор на .numberL для уніфікації з resetContent
+  const numbers = card.querySelectorAll(".value .numberL");
   numbers.forEach(numEl => {
     const finalValue = parseInt(numEl.getAttribute("data-final"));
     const duration = 1500;
@@ -237,28 +245,4 @@ function animateGraph(card) {
     svgPath.style.transition = "stroke-dashoffset 4s ease";
     svgPath.style.strokeDashoffset = "0";
   }
-}
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".numberL").forEach(numEl => {
-    if (!numEl.hasAttribute("data-final")) {
-      const finalValue = numEl.textContent.replace("+", "").replace("%", "").trim();
-      numEl.setAttribute("data-final", finalValue);
-    }
-    numEl.textContent = "+0%";
-    animateCounter(numEl);
-  });
-});
-
-function animateCounter(numEl) {
-  const finalValue = parseInt(numEl.getAttribute("data-final"));
-  const duration = 1500;
-  let startTime = null;
-  function step(timestamp) {
-    if (!startTime) startTime = timestamp;
-    const progress = timestamp - startTime;
-    const current = Math.min(finalValue, Math.floor((progress / duration) * finalValue));
-    numEl.textContent = `+${current}%`;
-    if (progress < duration) requestAnimationFrame(step);
-  }
-  requestAnimationFrame(step);
 }
