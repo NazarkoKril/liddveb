@@ -13,7 +13,7 @@
     <title>Liddweb</title>
 </head>
 
-<body>
+<body style="overflow: visible;">
     <header class="header">
         <div class="container">
             <div class="header__container">
@@ -24,7 +24,7 @@
                         <span></span>
                     </button>
                 </div>
-                <a href="../" class="logo_header"><img src="../assets/img/logo_head.svg" alt="logo" /></a>
+                <a href="../" class="logo_header"><img loading="lazy" src="../assets/img/logo_head.svg" alt="logo" /></a>
                 <div class="empty"></div>
                 <div class="right__header">
                     <div class="language-dropdown">
@@ -137,7 +137,7 @@
             <div class="item_mob">
                 <a href="../page/service.html" class="title_mob">
                     <p><span>01</span>Services</p>
-                    <img src="../assets/icon/arrov_btn.svg" alt="arrow icon" />
+                    <img loading="lazy" src="../assets/icon/arrov_btn.svg" alt="arrow icon" />
                 </a>
                 <div class="list_mob">
                     <a href="../page/serviceSubCard.html">Web development</a>
@@ -149,13 +149,13 @@
             <div class="item_mob">
                 <a href="../page/portfolio.html" class="title_mob">
                     <p><span>02</span>Portfolio</p>
-                    <img src="../assets/icon/arrov_btn.svg" alt="arrow icon" />
+                    <img loading="lazy" src="../assets/icon/arrov_btn.svg" alt="arrow icon" />
                 </a>
             </div>
             <div class="item_mob">
                 <a href="../page/about.html" class="title_mob">
                     <p><span>03</span>About</p>
-                    <img src="../assets/icon/arrov_btn.svg" alt="arrow icon" />
+                    <img loading="lazy" src="../assets/icon/arrov_btn.svg" alt="arrow icon" />
                 </a>
                 <div class="list_mob">
                     <a href="../page/about.html">Philosophy</a>
@@ -165,7 +165,7 @@
             <div class="item_mob">
                 <a href="../page/blog.html" class="title_mob">
                     <p><span>04</span>Blog</p>
-                    <img src="../assets/icon/arrov_btn.svg" alt="arrow icon" />
+                    <img loading="lazy" src="../assets/icon/arrov_btn.svg" alt="arrow icon" />
                 </a>
             </div>
         </div>
@@ -177,7 +177,7 @@
     </nav>
     <main>
         <section class="main_section sect_hero_port">
-            <img class="hero_photo_portfolio" src="../assets/img/project/hero_portfolio.jpg"
+            <img loading="lazy" class="hero_photo_portfolio" src="../assets/img/project/hero_portfolio.jpg"
                 alt="photo portfolio website" />
 
             <div class="hero_bot">
@@ -186,7 +186,7 @@
                 </div>
                 <a href="#sect2" class="btn_transperent_animation mob">
                     <p>Scroll down</p>
-                    <img src="../assets/icon/arrow_down.svg" alt="icon arrow button" />
+                    <img loading="lazy" src="../assets/icon/arrow_down.svg" alt="icon arrow button" />
                 </a>
             </div>
         </section>
@@ -221,7 +221,7 @@
                 </div>
                 <div class="grid4">
                     <div class="main_info">
-                        <img src="../assets/icon/yank.svg" alt="logo website" />
+                        <img loading="lazy" src="../assets/icon/yank.svg" alt="logo website" />
                         <a href="#">yank.com</a>
                         <p class="gray_text">
                             Our teams of technologists, strategists and designers deliver
@@ -246,21 +246,21 @@
                     </div>
                     <div class="empty"></div>
                 </div>
-                <div class="grid4" style="padding-bottom: 0px">
+                <div class="grid4 flexs" style="padding-bottom: 0px">
                     <div class="empty"></div>
-                    <div class="box box_back-desk">
+                    <div class="box box_back">
                         <h3 class="counter" data-target="40+" data-duration="2000">
                             40<span>+</span>
                         </h3>
                         <p>A/b test condected</p>
                     </div>
-                    <div class="box box_back-mob">
-                        <h3 class="counter" data-target="26.4%" data-duration="2000">
-                            26.4<span>%</span>
+                    <div class="box ">
+                        <h3 class="counter" data-target="26%" data-duration="2000">
+                            26<span>%</span>
                         </h3>
                         <p>A/b test condected</p>
                     </div>
-                    <div class="box box_back-desk">
+                    <div class="box box_back">
                         <h3 class="counter" data-target="79%" data-duration="2000">
                             79<span>%</span>
                         </h3>
@@ -304,10 +304,10 @@
                 <div class="grid3">
                     <p class="text_color purple">Technologies</p>
                     <div class="box_icon">
-                        <img src="../assets/icon/icon1.svg" alt="icon technologists" />
-                        <img src="../assets/icon/icon2.svg" alt="icon technologists" />
-                        <img src="../assets/icon/icon3.svg" alt="icon technologists" />
-                        <img src="../assets/icon/icon4.svg" alt="icon technologists" />
+                        <img loading="lazy" src="../assets/icon/icon1.svg" alt="icon technologists" />
+                        <img loading="lazy" src="../assets/icon/icon2.svg" alt="icon technologists" />
+                        <img loading="lazy" src="../assets/icon/icon3.svg" alt="icon technologists" />
+                        <img loading="lazy" src="../assets/icon/icon4.svg" alt="icon technologists" />
                     </div>
                     <h4 class="text_techno">
                         We build ecommerce solutions based on top platforms like Shopify,
@@ -319,43 +319,324 @@
         <section class="sect_port_info">
             <div class="container">
                 <div class="grid3">
-                    <div class="nav_sub">
-                        <a href="#sub1">Subheader</a>
-                        <a href="#sub1">Subheader</a>
-                        <a href="#sub1">Subheader</a>
-                    </div>
-                    <div class="text_info">
-                        <h3 class="title_info">Клієнт Де моя піца?</h3>
-                        <p class="text_info">З самої назви бренду ми можемо здогадатись, що це заклад піцерії, потенційним споживачем якої є нетерпляча, бешкетна людина, яка не може чекати на приготування піци, а хоче її з'їсти вже. Мова ведеться, безпосередньо, про енергійних, непосидючих дітлахів.</p>
-                    </div>
-                    <div class="share">
-                        <p>Share in</p>
-                        <div class="flex">
-                            <a href="#" class="btn40">
-                                <img src="../assets/icon/linkedin.svg" alt="icon linkedin" />
-                            </a>
-                            <a href="#" class="btn40">
-                                <img src="../assets/icon/instagram.svg" alt="icon instagram" />
-                            </a>
+                  
+                        <div class="nav_sub">
+                            <a href="#sub1">Subheader</a>
+                            <a href="#sub2">Subheader</a>
+                            <a href="#sub3">Subheader</a>
                         </div>
+                    
+
+                    <div class="text_cont">
+                        <h3 id="sub1" class="title_info">Клієнт Де моя піца?</h3>
+                        <p class="text_info">
+                            З самої назви бренду ми можемо здогадатись, що це заклад
+                            піцерії, потенційним споживачем якої є нетерпляча,
+                            бешкетна людина, яка не може чекати на приготування піци, а хоче
+                            її з'їсти вже. Мова ведеться, безпосередньо, про енергійних,
+                            непосидючих дітлахів.
+                        </p>
+                        <img loading="lazy" src="../assets/img/project/img2.jpg" alt="image project" />
+                        <h3 id="sub2" class="title_info">Рішення</h3>
+                        <p class="text_info">
+                            Цільовою аудиторією закладу Де моя піца? є діти, тому
+                            всю айдентику я зробив грайливою, нестрогою, дитячою. Логотип
+                            має характер дітей, адже він теж рухливий та динамічний, а
+                            особливо це підкреслюють гнучкі, хаотичні форми.
+                        </p>
+                        <p class="text_list">Логотип складається з трьох елементів:</p>
+                        <p class="text_item">
+                            <span class="text_icon_list"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M15.6099 11.3492L19.1539 10.3293V8.95541L11.7801 7.00073L4.40625 8.95541V10.3293L7.95027 11.3492L10.1939 11.9724V12.0007L7.95027 12.6381L4.40625 13.658V15.0602L11.7801 17.0007L19.1539 15.0602V13.658L15.6099 12.6381L13.3663 12.0007V11.9724L15.6099 11.3492Z"
+                                        fill="#27C5D9" />
+                                </svg></span>
+                            динамічний трикутник, нагадуючий форму шматка піци, залітаючого
+                            нам прямо в рот
+                        </p>
+                        <p class="text_item">
+                            <span class="text_icon_list"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M15.6099 11.3492L19.1539 10.3293V8.95541L11.7801 7.00073L4.40625 8.95541V10.3293L7.95027 11.3492L10.1939 11.9724V12.0007L7.95027 12.6381L4.40625 13.658V15.0602L11.7801 17.0007L19.1539 15.0602V13.658L15.6099 12.6381L13.3663 12.0007V11.9724L15.6099 11.3492Z"
+                                        fill="#27C5D9" />
+                                </svg></span>
+                            напис «Де моя піца», який хаотично написаний та має різні
+                            розміри графем,  що символізують інгредієнти піци
+                        </p>
+                        <p class="text_item">
+                            <span class="text_icon_list"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M15.6099 11.3492L19.1539 10.3293V8.95541L11.7801 7.00073L4.40625 8.95541V10.3293L7.95027 11.3492L10.1939 11.9724V12.0007L7.95027 12.6381L4.40625 13.658V15.0602L11.7801 17.0007L19.1539 15.0602V13.658L15.6099 12.6381L13.3663 12.0007V11.9724L15.6099 11.3492Z"
+                                        fill="#27C5D9" />
+                                </svg></span>
+                            знак запитання, це елемент, що тримає весь логотип, робить його
+                            об’ємнішим та нагадує масивний шар тіста, який зазвичай
+                            присутній у піці
+                        </p>
+                        <img loading="lazy" src="../assets/img/project/img3.jpg" alt="image project" style="margin-top: 40px" />
+                        <h3 id="sub3" class="title_info">
+                            Безпечні зони та варіації логотипа
+                        </h3>
+                        <p class="text_info">
+                            Логотип, що розміщений зліва, є основним логотипом бренду, який
+                            працює у більшості випадках та є основним ідентифікатором
+                            бренду. Другорядний варіант логотипу використовується вкрай
+                            рідко, але є дуже важливим елементом бренду. В маленьких
+                            розмірах, у вигляді іконок чи печаток, основний логотип просто
+                            важко прочитати, тоді йому на допомогу приходить другорядний
+                            логотип, який має в собі менше елементів та легше впізнається.
+                        </p>
+                        <img loading="lazy" src="../assets/img/project/img4.jpg" alt="image project" />
+                        <p class="sub_image">
+                            Our teams of technologists, strategists and designers deliver
+                            powerful
+                        </p>
+                        <p class="text_info">
+                            Безпечні зони зроблені задля того, щоб чужорідні елементи не
+                            зашкоджували логотипу добре зчитуватись і бути зрозумілим. За
+                            нашими розрахунками, достатньо 1/4 ширини логотипа навколо
+                            нього, щоб не заважати його існуванню.
+                        </p>
+                    </div>
+                   
+                        <div class="share">
+                            <p>Share in</p>
+                            <div class="flex">
+                                <a href="#" class="btn40">
+                                    <img loading="lazy" src="../assets/icon/linkedin.svg" alt="icon linkedin" />
+                                </a>
+                                <a href="#" class="btn40">
+                                    <img loading="lazy" src="../assets/icon/instagram.svg" alt="icon instagram" />
+                                </a>
+                            </div>
+                        </div>
+                  
+                </div>
+            </div>
+            <div class="grid3_bot">
+                <div class="empty"></div>
+                <div class="block">
+                    <p>“</p>
+                    <h4>
+                        Our teams of technologists, strategists and designers deliver
+                        powerful digital experiences. We specialize in 11 industries
+                        across 55+ countries & regions, delivering innovative solutions to
+                        our customers’ most challenging problems.
+                    </h4>
+                </div>
+            </div>
+            <div class="grid3_bot1">
+                <div class="empty"></div>
+                <button class="contact-button form_main">
+                    <p>Name of Btn</p>
+                </button>
+            </div>
+            <div class="share share_mob">
+                <p>Share in</p>
+                <div class="flex">
+                    <a href="#" class="btn40">
+                        <img loading="lazy" src="../assets/icon/linkedin.svg" alt="icon linkedin" />
+                    </a>
+                    <a href="#" class="btn40">
+                        <img loading="lazy" src="../assets/icon/instagram.svg" alt="icon instagram" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sect_awards">
+            <div class="container">
+                <div class="grid2">
+                    <p class="text_color purple">awards</p>
+                    <div class="grid3">
+                        <img loading="lazy" src="../assets/icon/award1.svg" alt="icon award">
+                        <img loading="lazy" src="../assets/icon/award1.svg" alt="icon award">
+                        <img loading="lazy" src="../assets/icon/award2.svg" alt="icon award">
+                       
                     </div>
                 </div>
             </div>
         </section>
-        <section class="sect_contact-form">
-            <div class="container_pb">
-                <div class="grid3">
+        <section class="sect_image">
+            <img loading="lazy"  src="../assets/img/project/imgcolor.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img5.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img6.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img7.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img8.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img9.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img10.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img11.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img12.jpg" alt="image project">
+            <img loading="lazy" src="../assets/img/project/img13.jpg" alt="image project">
+            <video width="100%" poster="../assets/img/project/img14.jpg" src="../assets/img/project/video1.mp4" controls=""></video>
+        </section>
+        <section class="sect_feedback portfolio">
+            <div class="container_pd">
+                <div class="title__box">
                     <div class="empty"></div>
-                    <div class="info_contact">
-                        <h3 class="small_title">
-                            Ready to kick off your next project? Let's chat!
-                        </h3>
-                        <button class="btn_white form_main">
-                            <img src="../assets/icon/arrov_btn-bluw.svg" alt="icon arrow button" />
-                            <p>Contact form</p>
-                        </button>
+                    <h2 class="mid_title">Clients feedback</h2>
+                    <div class="empty"></div>
+                </div>
+                <div class="swiper swiper_feedback">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="slide_feedback grid3">
+                                
+                                <div class="info_feedback">
+                                    <img loading="lazy" src="../assets/icon/yank.svg" alt="logo yank" class="target" />
+                                    <div class="quote_btn">
+                                        <div class="img_profile">
+                                            <img loading="lazy" src="../assets/img/photo_prof.png" alt="photo profile" />
+                                        </div>
+                                        <div class="info">
+                                            <h4>Dmytro Drobotia</h4>
+                                            <p>CEO</p>
+                                        </div>
+                                    </div>
+                                    <div class="rate">
+                                        <div class="stars">
+                                            <img loading="lazy" src="../assets/icon/star.svg" alt="star rate" />
+                                            <img loading="lazy" src="../assets/icon/star.svg" alt="star rate" />
+                                            <img loading="lazy" src="../assets/icon/star.svg" alt="star rate" />
+                                            <img loading="lazy" src="../assets/icon/star.svg" alt="star rate" />
+                                            <img loading="lazy" src="../assets/icon/star_half.svg" alt="star rate" />
+                                        </div>
+                                        <p class="rating">4.5</p>
+                                    </div>
+                                </div>
+                                <div class="text_feedback">
+                                    <h2 class="h2_feedback">
+                                        Working with them is one of the best experiences I’ve had
+                                        with a vendor. Working with them is one of the best
+                                        experiences.
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                       
                     </div>
+                   
+                </div>
+            </div>
+        </section>
+        <section class="sect_project color portfolio">
+            <div class="container_pd">
+                <div class="title__box">
                     <div class="empty"></div>
+                    <h1 class="mid_title">Relevant projects</h1>
+                </div>
+                <div class="list_project">
+                    <a class="item_project" href="../page/portfolioCase.html">
+                        <div class="left_project">
+                            <p class="data">Oct, 20 2024</p>
+                            <div class="tags">
+                                <div class="tag purple">UX / UI</div>
+                                <div class="tag purple">Web Design</div>
+                            </div>
+                        </div>
+                        <div class="text_project">
+                            <h3 class="title_project">
+                                Medrano Roofing <br />
+                                Webpage
+                            </h3>
+                            <p class="subtitle_project">
+                                Our teams of technologists, strategists and designers deliver
+                                powerful digital experiences. We specialize in 11 industries
+                                across 55+ countries & regions.
+                            </p>
+                        </div>
+                        <div class="img_project">
+                            <img loading="lazy" src="../assets/img/project/img1.jpg" alt="image project" />
+                            <div class="name_project">
+                                <svg width="305" height="70" viewBox="0 0 305 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M118.98 16.9536L104.661 55.0787H97.42L83.0469 16.9536H89.7402L101.042 48.6618L112.396 16.9536H118.98Z"
+                                        fill="white" />
+                                    <path
+                                        d="M118.844 31.7627C120.104 29.4228 121.824 27.6023 124 26.3037C126.176 25.0051 128.58 24.3569 131.213 24.3569C133.588 24.3569 135.664 24.824 137.439 25.7556C139.212 26.6873 140.63 27.8501 141.69 29.2393V24.8502H148V55.0762H141.69V50.5774C140.63 52.0048 139.186 53.1914 137.356 54.1421C135.526 55.0929 133.443 55.5694 131.103 55.5694C128.506 55.5694 126.13 54.9023 123.971 53.5679C121.813 52.2335 120.104 50.3678 118.841 47.973C117.578 45.5783 116.949 42.8619 116.949 39.8262C116.949 36.7905 117.581 34.1027 118.841 31.7627H118.844ZM140.403 34.5053C139.543 32.9684 138.418 31.7985 137.029 30.9955C135.64 30.1925 134.139 29.7898 132.53 29.7898C130.922 29.7898 129.421 30.1829 128.032 30.9692C126.643 31.7556 125.518 32.9089 124.658 34.4243C123.797 35.9422 123.369 37.7436 123.369 39.8286C123.369 41.9135 123.797 43.7411 124.658 45.3138C125.515 46.8865 126.65 48.085 128.058 48.9071C129.466 49.7292 130.955 50.1414 132.528 50.1414C134.101 50.1414 135.635 49.7387 137.027 48.9357C138.416 48.1327 139.541 46.9532 140.401 45.3972C141.259 43.8436 141.69 42.0231 141.69 39.9382C141.69 37.8532 141.261 36.0423 140.401 34.5077L140.403 34.5053Z"
+                                        fill="white" />
+                                    <path
+                                        d="M175.998 25.8391C177.88 26.8256 179.353 28.2886 180.413 30.2283C181.473 32.1679 182.005 34.5078 182.005 37.2504V55.0786H175.807V38.1821C175.807 35.4752 175.13 33.3998 173.777 31.9558C172.424 30.5118 170.577 29.7898 168.237 29.7898C165.897 29.7898 164.041 30.5118 162.668 31.9558C161.298 33.3998 160.612 35.4752 160.612 38.1821V55.0786H154.359V24.8526H160.612V28.3077C161.634 27.0639 162.942 26.0964 164.534 25.4007C166.123 24.7073 167.815 24.3594 169.607 24.3594C171.983 24.3594 174.113 24.8526 175.998 25.8415V25.8391Z"
+                                        fill="white" />
+                                    <path
+                                        d="M195.39 29.9544V46.6865C195.39 47.8207 195.655 48.6332 196.186 49.1265C196.715 49.6197 197.62 49.8675 198.902 49.8675H202.743V55.0788H197.806C194.99 55.0788 192.833 54.4211 191.332 53.1034C189.831 51.7857 189.083 49.6483 189.083 46.6841V29.952H185.516V24.8504H189.083V17.335H195.39V24.8504H202.741V29.952H195.39V29.9544Z"
+                                        fill="white" />
+                                    <path
+                                        d="M206.445 31.7627C207.706 29.4228 209.426 27.6023 211.602 26.3037C213.777 25.0051 216.181 24.3569 218.814 24.3569C221.19 24.3569 223.265 24.824 225.041 25.7556C226.813 26.6873 228.231 27.8501 229.292 29.2393V24.8502H235.601V55.0762H229.292V50.5774C228.231 52.0048 226.787 53.1914 224.957 54.1421C223.127 55.0929 221.045 55.5694 218.705 55.5694C216.107 55.5694 213.732 54.9023 211.573 53.5679C209.414 52.2335 207.706 50.3678 206.443 47.973C205.18 45.5783 204.551 42.8619 204.551 39.8262C204.551 36.7905 205.182 34.1027 206.443 31.7627H206.445ZM228.005 34.5053C227.145 32.9684 226.02 31.7985 224.631 30.9955C223.242 30.1925 221.74 29.7898 220.132 29.7898C218.524 29.7898 217.022 30.1829 215.633 30.9692C214.244 31.7556 213.119 32.9089 212.259 34.4243C211.399 35.9422 210.97 37.7436 210.97 39.8286C210.97 41.9135 211.399 43.7411 212.259 45.3138C213.117 46.8865 214.251 48.085 215.66 48.9071C217.068 49.7292 218.557 50.1414 220.13 50.1414C221.702 50.1414 223.237 49.7387 224.628 48.9357C226.018 48.1327 227.142 46.9532 228.003 45.3972C228.86 43.8436 229.292 42.0231 229.292 39.9382C229.292 37.8532 228.863 36.0423 228.003 34.5077L228.005 34.5053Z"
+                                        fill="white" />
+                                    <path
+                                        d="M260.373 25.758C262.184 26.6897 263.599 27.8525 264.624 29.2417V24.8526H270.933V55.5718C270.933 58.3502 270.347 60.8283 269.177 63.0038C268.007 65.1793 266.315 66.8902 264.102 68.134C261.888 69.3779 259.248 69.9998 256.174 69.9998C252.078 69.9998 248.678 69.0395 245.971 67.119C243.264 65.1984 241.727 62.594 241.363 59.3009H247.56C248.034 60.8736 249.05 62.1436 250.605 63.1134C252.159 64.0809 254.015 64.567 256.174 64.567C258.698 64.567 260.735 63.7997 262.291 62.2628C263.844 60.7259 264.621 58.4955 264.621 55.5694V50.5226C263.561 51.9499 262.126 53.1461 260.315 54.1159C258.505 55.0857 256.448 55.5694 254.144 55.5694C251.511 55.5694 249.104 54.9022 246.931 53.5679C244.756 52.2335 243.035 50.3678 241.775 47.973C240.512 45.5783 239.883 42.8619 239.883 39.8262C239.883 36.7905 240.514 34.1027 241.775 31.7627C243.035 29.4228 244.756 27.6023 246.931 26.3037C249.107 25.0051 251.511 24.3569 254.144 24.3569C256.484 24.3569 258.559 24.824 260.37 25.7556L260.373 25.758ZM263.335 34.5077C262.474 32.9708 261.35 31.8008 259.96 30.9978C258.571 30.1948 257.07 29.7921 255.462 29.7921C253.853 29.7921 252.352 30.1853 250.963 30.9716C249.574 31.758 248.449 32.9112 247.589 34.4267C246.729 35.9446 246.3 37.746 246.3 39.8309C246.3 41.9159 246.729 43.7435 247.589 45.3162C248.447 46.8888 249.581 48.0874 250.989 48.9095C252.397 49.7315 253.887 50.1438 255.459 50.1438C257.032 50.1438 258.566 49.7411 259.958 48.9381C261.347 48.1351 262.472 46.9556 263.332 45.3996C264.19 43.846 264.621 42.0255 264.621 39.9405C264.621 37.8556 264.192 36.0446 263.332 34.5101L263.335 34.5077Z"
+                                        fill="white" />
+                                    <path
+                                        d="M304.777 42.2972H281.683C281.866 44.7109 282.762 46.6506 284.371 48.1112C285.979 49.5743 287.954 50.3058 290.294 50.3058C293.659 50.3058 296.034 48.8976 297.426 46.0811H304.174C303.259 48.8618 301.605 51.1374 299.211 52.9102C296.816 54.6854 293.845 55.5718 290.297 55.5718C287.406 55.5718 284.818 54.9237 282.533 53.6251C280.248 52.3264 278.454 50.4988 277.158 48.1398C275.859 45.7808 275.211 43.0477 275.211 39.9382C275.211 36.8286 275.842 34.0955 277.103 31.7365C278.363 29.3775 280.139 27.5594 282.424 26.2775C284.709 24.9979 287.332 24.3569 290.297 24.3569C293.261 24.3569 295.691 24.9788 297.922 26.2227C300.152 27.4665 301.889 29.2131 303.133 31.4625C304.377 33.7119 304.999 36.2996 304.999 39.2257C304.999 40.3599 304.925 41.3845 304.779 42.2972H304.777ZM298.47 37.2504C298.434 34.9462 297.609 33.0995 296.001 31.7103C294.39 30.3211 292.398 29.6253 290.023 29.6253C287.864 29.6253 286.017 30.3116 284.483 31.6817C282.946 33.0542 282.033 34.9104 281.74 37.2504H298.472H298.47Z"
+                                        fill="white" />
+                                    <path
+                                        d="M62.6126 1.03414C66.0367 1.03414 68.8222 3.81965 68.8222 7.24376V62.618C68.8222 66.0421 66.0367 68.8277 62.6126 68.8277H7.23831C3.8142 68.8277 1.02871 66.0421 1.02871 62.618V7.24614C1.02871 3.82204 3.8142 1.03653 7.23831 1.03653H62.6126M62.6126 0.00238333H7.23831C3.23756 0.00238333 -0.0078125 3.2454 -0.0078125 7.24853V62.6228C-0.0078125 66.6235 3.23518 69.8689 7.23831 69.8689H62.6126C66.6133 69.8689 69.8587 66.6259 69.8587 62.6228V7.24614C69.8587 3.2454 66.6157 0 62.6126 0V0.00238333Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M50.0324 15.2978C53.0944 16.7846 54.4359 20.4899 52.9323 23.6209V23.6924L39.3455 51.5833C38.3256 53.7135 36.1954 55.2004 33.6172 55.2004C30.1621 55.2004 27.3337 52.372 27.3337 48.9169C27.3337 47.8971 27.5673 46.8772 28.051 46.017L41.6378 18.1976C43.1961 15.0642 46.8824 13.7942 50.0324 15.2978ZM25.0415 24.3191C28.4966 24.3191 31.325 27.1475 31.325 30.6026C31.325 31.5509 31.1343 32.4278 30.7697 33.1975C30.7268 33.288 24.9509 45.0663 24.9509 45.0663L19.4561 33.3595C19.063 32.4993 18.8295 31.5509 18.8295 30.5311C18.758 27.1666 21.5864 24.3191 25.0415 24.3191Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="item_project" href="../page/portfolioCase.html">
+                        <div class="left_project">
+                            <p class="data">Oct, 20 2024</p>
+                            <div class="tags">
+                                <div class="tag green">Analitics</div>
+                                <div class="tag green">Insights</div>
+                            </div>
+                        </div>
+                        <div class="text_project">
+                            <h3 class="title_project">YANK</h3>
+                            <p class="subtitle_project">
+                                Our teams of technologists, strategists and designers deliver
+                                powerful digital experiences. We specialize in 11 industries
+                                across 55+ countries & regions.
+                            </p>
+                        </div>
+                        <div class="img_project">
+                            <img loading="lazy" src="../assets/img/project/img1.jpg" alt="image project" />
+                            <div class="name_project">
+                                <svg width="305" height="70" viewBox="0 0 305 70" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M118.98 16.9536L104.661 55.0787H97.42L83.0469 16.9536H89.7402L101.042 48.6618L112.396 16.9536H118.98Z"
+                                        fill="white" />
+                                    <path
+                                        d="M118.844 31.7627C120.104 29.4228 121.824 27.6023 124 26.3037C126.176 25.0051 128.58 24.3569 131.213 24.3569C133.588 24.3569 135.664 24.824 137.439 25.7556C139.212 26.6873 140.63 27.8501 141.69 29.2393V24.8502H148V55.0762H141.69V50.5774C140.63 52.0048 139.186 53.1914 137.356 54.1421C135.526 55.0929 133.443 55.5694 131.103 55.5694C128.506 55.5694 126.13 54.9023 123.971 53.5679C121.813 52.2335 120.104 50.3678 118.841 47.973C117.578 45.5783 116.949 42.8619 116.949 39.8262C116.949 36.7905 117.581 34.1027 118.841 31.7627H118.844ZM140.403 34.5053C139.543 32.9684 138.418 31.7985 137.029 30.9955C135.64 30.1925 134.139 29.7898 132.53 29.7898C130.922 29.7898 129.421 30.1829 128.032 30.9692C126.643 31.7556 125.518 32.9089 124.658 34.4243C123.797 35.9422 123.369 37.7436 123.369 39.8286C123.369 41.9135 123.797 43.7411 124.658 45.3138C125.515 46.8865 126.65 48.085 128.058 48.9071C129.466 49.7292 130.955 50.1414 132.528 50.1414C134.101 50.1414 135.635 49.7387 137.027 48.9357C138.416 48.1327 139.541 46.9532 140.401 45.3972C141.259 43.8436 141.69 42.0231 141.69 39.9382C141.69 37.8532 141.261 36.0423 140.401 34.5077L140.403 34.5053Z"
+                                        fill="white" />
+                                    <path
+                                        d="M175.998 25.8391C177.88 26.8256 179.353 28.2886 180.413 30.2283C181.473 32.1679 182.005 34.5078 182.005 37.2504V55.0786H175.807V38.1821C175.807 35.4752 175.13 33.3998 173.777 31.9558C172.424 30.5118 170.577 29.7898 168.237 29.7898C165.897 29.7898 164.041 30.5118 162.668 31.9558C161.298 33.3998 160.612 35.4752 160.612 38.1821V55.0786H154.359V24.8526H160.612V28.3077C161.634 27.0639 162.942 26.0964 164.534 25.4007C166.123 24.7073 167.815 24.3594 169.607 24.3594C171.983 24.3594 174.113 24.8526 175.998 25.8415V25.8391Z"
+                                        fill="white" />
+                                    <path
+                                        d="M195.39 29.9544V46.6865C195.39 47.8207 195.655 48.6332 196.186 49.1265C196.715 49.6197 197.62 49.8675 198.902 49.8675H202.743V55.0788H197.806C194.99 55.0788 192.833 54.4211 191.332 53.1034C189.831 51.7857 189.083 49.6483 189.083 46.6841V29.952H185.516V24.8504H189.083V17.335H195.39V24.8504H202.741V29.952H195.39V29.9544Z"
+                                        fill="white" />
+                                    <path
+                                        d="M206.445 31.7627C207.706 29.4228 209.426 27.6023 211.602 26.3037C213.777 25.0051 216.181 24.3569 218.814 24.3569C221.19 24.3569 223.265 24.824 225.041 25.7556C226.813 26.6873 228.231 27.8501 229.292 29.2393V24.8502H235.601V55.0762H229.292V50.5774C228.231 52.0048 226.787 53.1914 224.957 54.1421C223.127 55.0929 221.045 55.5694 218.705 55.5694C216.107 55.5694 213.732 54.9023 211.573 53.5679C209.414 52.2335 207.706 50.3678 206.443 47.973C205.18 45.5783 204.551 42.8619 204.551 39.8262C204.551 36.7905 205.182 34.1027 206.443 31.7627H206.445ZM228.005 34.5053C227.145 32.9684 226.02 31.7985 224.631 30.9955C223.242 30.1925 221.74 29.7898 220.132 29.7898C218.524 29.7898 217.022 30.1829 215.633 30.9692C214.244 31.7556 213.119 32.9089 212.259 34.4243C211.399 35.9422 210.97 37.7436 210.97 39.8286C210.97 41.9135 211.399 43.7411 212.259 45.3138C213.117 46.8865 214.251 48.085 215.66 48.9071C217.068 49.7292 218.557 50.1414 220.13 50.1414C221.702 50.1414 223.237 49.7387 224.628 48.9357C226.018 48.1327 227.142 46.9532 228.003 45.3972C228.86 43.8436 229.292 42.0231 229.292 39.9382C229.292 37.8532 228.863 36.0423 228.003 34.5077L228.005 34.5053Z"
+                                        fill="white" />
+                                    <path
+                                        d="M260.373 25.758C262.184 26.6897 263.599 27.8525 264.624 29.2417V24.8526H270.933V55.5718C270.933 58.3502 270.347 60.8283 269.177 63.0038C268.007 65.1793 266.315 66.8902 264.102 68.134C261.888 69.3779 259.248 69.9998 256.174 69.9998C252.078 69.9998 248.678 69.0395 245.971 67.119C243.264 65.1984 241.727 62.594 241.363 59.3009H247.56C248.034 60.8736 249.05 62.1436 250.605 63.1134C252.159 64.0809 254.015 64.567 256.174 64.567C258.698 64.567 260.735 63.7997 262.291 62.2628C263.844 60.7259 264.621 58.4955 264.621 55.5694V50.5226C263.561 51.9499 262.126 53.1461 260.315 54.1159C258.505 55.0857 256.448 55.5694 254.144 55.5694C251.511 55.5694 249.104 54.9022 246.931 53.5679C244.756 52.2335 243.035 50.3678 241.775 47.973C240.512 45.5783 239.883 42.8619 239.883 39.8262C239.883 36.7905 240.514 34.1027 241.775 31.7627C243.035 29.4228 244.756 27.6023 246.931 26.3037C249.107 25.0051 251.511 24.3569 254.144 24.3569C256.484 24.3569 258.559 24.824 260.37 25.7556L260.373 25.758ZM263.335 34.5077C262.474 32.9708 261.35 31.8008 259.96 30.9978C258.571 30.1948 257.07 29.7921 255.462 29.7921C253.853 29.7921 252.352 30.1853 250.963 30.9716C249.574 31.758 248.449 32.9112 247.589 34.4267C246.729 35.9446 246.3 37.746 246.3 39.8309C246.3 41.9159 246.729 43.7435 247.589 45.3162C248.447 46.8888 249.581 48.0874 250.989 48.9095C252.397 49.7315 253.887 50.1438 255.459 50.1438C257.032 50.1438 258.566 49.7411 259.958 48.9381C261.347 48.1351 262.472 46.9556 263.332 45.3996C264.19 43.846 264.621 42.0255 264.621 39.9405C264.621 37.8556 264.192 36.0446 263.332 34.5101L263.335 34.5077Z"
+                                        fill="white" />
+                                    <path
+                                        d="M304.777 42.2972H281.683C281.866 44.7109 282.762 46.6506 284.371 48.1112C285.979 49.5743 287.954 50.3058 290.294 50.3058C293.659 50.3058 296.034 48.8976 297.426 46.0811H304.174C303.259 48.8618 301.605 51.1374 299.211 52.9102C296.816 54.6854 293.845 55.5718 290.297 55.5718C287.406 55.5718 284.818 54.9237 282.533 53.6251C280.248 52.3264 278.454 50.4988 277.158 48.1398C275.859 45.7808 275.211 43.0477 275.211 39.9382C275.211 36.8286 275.842 34.0955 277.103 31.7365C278.363 29.3775 280.139 27.5594 282.424 26.2775C284.709 24.9979 287.332 24.3569 290.297 24.3569C293.261 24.3569 295.691 24.9788 297.922 26.2227C300.152 27.4665 301.889 29.2131 303.133 31.4625C304.377 33.7119 304.999 36.2996 304.999 39.2257C304.999 40.3599 304.925 41.3845 304.779 42.2972H304.777ZM298.47 37.2504C298.434 34.9462 297.609 33.0995 296.001 31.7103C294.39 30.3211 292.398 29.6253 290.023 29.6253C287.864 29.6253 286.017 30.3116 284.483 31.6817C282.946 33.0542 282.033 34.9104 281.74 37.2504H298.472H298.47Z"
+                                        fill="white" />
+                                    <path
+                                        d="M62.6126 1.03414C66.0367 1.03414 68.8222 3.81965 68.8222 7.24376V62.618C68.8222 66.0421 66.0367 68.8277 62.6126 68.8277H7.23831C3.8142 68.8277 1.02871 66.0421 1.02871 62.618V7.24614C1.02871 3.82204 3.8142 1.03653 7.23831 1.03653H62.6126M62.6126 0.00238333H7.23831C3.23756 0.00238333 -0.0078125 3.2454 -0.0078125 7.24853V62.6228C-0.0078125 66.6235 3.23518 69.8689 7.23831 69.8689H62.6126C66.6133 69.8689 69.8587 66.6259 69.8587 62.6228V7.24614C69.8587 3.2454 66.6157 0 62.6126 0V0.00238333Z"
+                                        fill="white" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M50.0324 15.2978C53.0944 16.7846 54.4359 20.4899 52.9323 23.6209V23.6924L39.3455 51.5833C38.3256 53.7135 36.1954 55.2004 33.6172 55.2004C30.1621 55.2004 27.3337 52.372 27.3337 48.9169C27.3337 47.8971 27.5673 46.8772 28.051 46.017L41.6378 18.1976C43.1961 15.0642 46.8824 13.7942 50.0324 15.2978ZM25.0415 24.3191C28.4966 24.3191 31.325 27.1475 31.325 30.6026C31.325 31.5509 31.1343 32.4278 30.7697 33.1975C30.7268 33.288 24.9509 45.0663 24.9509 45.0663L19.4561 33.3595C19.063 32.4993 18.8295 31.5509 18.8295 30.5311C18.758 27.1666 21.5864 24.3191 25.0415 24.3191Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -364,7 +645,7 @@
         <div class="container">
             <div class="grid3">
                 <div class="left_footer">
-                    <img src="../assets/img/logo_head.svg" alt="logo Liddweb" />
+                    <img loading="lazy" src="../assets/img/logo_head.svg" alt="logo Liddweb" />
                     <p class="adress">
                         2651 Sunset Blvd, <br />
                         Rocklin, CA
@@ -424,22 +705,22 @@
                     <p class="footer_title">Our media</p>
                     <div class="soc_box">
                         <a href="#">
-                            <img src="../assets/icon/linkedin.svg" alt="linkedin icon" />
+                            <img loading="lazy" src="../assets/icon/linkedin.svg" alt="linkedin icon" />
                         </a>
                         <a href="#">
-                            <img src="../assets/icon/instagram.svg" alt="linkedin icon" />
+                            <img loading="lazy" src="../assets/icon/instagram.svg" alt="linkedin icon" />
                         </a>
                         <a href="tel:+1(916)589-7325">
-                            <img src="../assets/icon/call.svg" alt="linkedin icon" />
+                            <img loading="lazy" src="../assets/icon/call.svg" alt="linkedin icon" />
                         </a>
                         <a href="mailto:liddweb@gmail.com">
-                            <img src="../assets/icon/email.svg" alt="linkedin icon" />
+                            <img loading="lazy" src="../assets/icon/email.svg" alt="linkedin icon" />
                         </a>
                         <a href="#">
-                            <img src="../assets/icon/behance.svg" alt="linkedin icon" />
+                            <img loading="lazy" src="../assets/icon/behance.svg" alt="linkedin icon" />
                         </a>
                         <a href="#">
-                            <img src="../assets/icon/clutch.svg" alt="linkedin icon" />
+                            <img loading="lazy" src="../assets/icon/clutch.svg" alt="linkedin icon" />
                         </a>
                     </div>
                     <div class="adress_box">
@@ -481,154 +762,6 @@
             </div>
         </div>
     </footer>
-    <div class="modal_main" id="modal_main1">
-        <form action="" class="form_main_big" id="form_main_big">
-            <div class="left_form_main">
-                <h4>Tell us more about <br />what you're building!</h4>
-                <p>
-                    Describe your project and leave <br />
-                    us your contact info, we’ll get back <br />
-                    to you within 24 hours.
-                </p>
-            </div>
-            <div class="info_form_main">
-                <h3>What is your project about?</h3>
-                <div id="work-options" class="flex">
-                    <button class="select_work purple" data-type="web">
-                        Web Development
-                    </button>
-                    <button class="select_work blue" data-type="software">
-                        Software Development
-                    </button>
-                    <button class="select_work orange" data-type="digital">
-                        Digital Marketing
-                    </button>
-                    <button class="select_work red" data-type="branding">
-                        Branding
-                    </button>
-                </div>
-                <h3>Budget estimation (USD)</h3>
-                <div id="price-options" class="flex">
-                    <button class="select_price" data-price="under_10k">
-                        Under 10K USD
-                    </button>
-                    <button class="select_price" data-price="10k-20k">
-                        10K-20K USD
-                    </button>
-                    <button class="select_price" data-price="20k-35k">
-                        20K-35K USD
-                    </button>
-                    <button class="select_price" data-price="50k+">50K+ USD</button>
-                </div>
-                <h3>Personal info</h3>
-                <div class="box_input">
-                    <div class="input_label error_input">
-                        <input type="text" placeholder="Name*" class="input_default" />
-                        <p class="error_text">This field is required</p>
-                    </div>
-                    <div class="input_label">
-                        <input type="text" placeholder="Last name*" class="input_default" />
-                        <p class="error_text"></p>
-                    </div>
-                </div>
-                <div class="box_input">
-                    <div class="input_label">
-                        <input type="tel" placeholder="Phone*" class="input_default" />
-                        <p class="error_text"></p>
-                    </div>
-                    <div class="input_label">
-                        <input type="email" placeholder="Email*" class="input_default" />
-                        <p class="error_text"></p>
-                    </div>
-                </div>
-                <div class="box_input selector">
-                    <div class="input_label">
-                        <input type="text" placeholder="Company" class="input_default" />
-                    </div>
-                    <div class="input select-wrapper">
-                        <div class="select-box input_default" tabindex="0">
-                            <span class="selected">Select your industry</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                                fill="none">
-                                <mask id="mask0_2054_3218" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0"
-                                    y="0" width="20" height="20">
-                                    <rect width="20" height="20" fill="#D9D9D9" />
-                                </mask>
-                                <g mask="url(#mask0_2054_3218)">
-                                    <path
-                                        d="M9.99954 18.0447L5.28809 13.3332L6.17913 12.4422L9.99954 16.2467L13.82 12.4422L14.711 13.3332L9.99954 18.0447ZM6.19184 7.54466L5.28809 6.66654L9.99954 1.95508L14.711 6.66654L13.8073 7.54466L9.99954 3.753L6.19184 7.54466Z"
-                                        fill="white" fill-opacity="0.5" />
-                                </g>
-                            </svg>
-                        </div>
-                        <ul class="dropdown-list">
-                            <li class="dropdown-item" data-value="Select your industry">
-                                Select your industry
-                            </li>
-                            <li class="dropdown-item" data-value="Option 1">Option 1</li>
-                            <li class="dropdown-item" data-value="Option 2">Option 2</li>
-                            <li class="dropdown-item" data-value="Option 3">Option 3</li>
-                            <li class="dropdown-item" data-value="Option 4">Option 4</li>
-                            <li class="dropdown-item" data-value="Option 5">Option 5</li>
-                            <li class="dropdown-item" data-value="Option 6">Option 6</li>
-                        </ul>
-                    </div>
-                </div>
-                <textarea class="input_default" placeholder="Comments"></textarea>
-            </div>
-            <div class="right_form_main">
-                <button class="close_main_form" id="closeModal">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <mask id="mask0_2054_377" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                            width="24" height="24">
-                            <rect width="24" height="24" fill="#D9D9D9" />
-                        </mask>
-                        <g mask="url(#mask0_2054_377)">
-                            <path
-                                d="M6.40043 18.6537L5.34668 17.5999L10.9467 11.9999L5.34668 6.39994L6.40043 5.34619L12.0004 10.9462L17.6004 5.34619L18.6542 6.39994L13.0542 11.9999L18.6542 17.5999L17.6004 18.6537L12.0004 13.0537L6.40043 18.6537Z"
-                                fill="white" />
-                        </g>
-                    </svg>
-                </button>
-                <button type="submit" class="btn_white" id="form_main_submit">
-                    <img src="../assets/icon/arrov_btn-bluw.svg" alt="icon arrow button" />
-                    <p>SEND MESSAGE</p>
-                </button>
-            </div>
-        </form>
-    </div>
-    <div class="modal_main" id="modal_main2">
-        <div class="succes_container">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <mask id="mask0_388_84051" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="40"
-                    height="40">
-                    <rect width="40" height="40" fill="#D9D9D9" />
-                </mask>
-                <g mask="url(#mask0_388_84051)">
-                    <path
-                        d="M14.6861 36.4418L11.712 31.4293L6.06448 30.1918L6.61573 24.378L2.78906 19.9997L6.61573 15.6214L6.06448 9.80762L11.712 8.57012L14.6861 3.55762L20.0003 5.81387L25.3145 3.55762L28.2886 8.57012L33.9361 9.80762L33.3849 15.6214L37.2116 19.9997L33.3849 24.378L33.9361 30.1918L28.2886 31.4293L25.3145 36.4418L20.0003 34.1855L14.6861 36.4418ZM18.2503 25.3393L27.0899 16.4997L25.3336 14.6922L18.2503 21.7755L14.667 18.2435L12.9107 19.9997L18.2503 25.3393Z"
-                        fill="#27C5D9" />
-                </g>
-            </svg>
-            <h3>Your request has been <br />successfully submitted</h3>
-            <p>We will process it and contact you by e-mail.</p>
-            <button class="contact-button" id="contact_button">
-                <p>Done</p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <mask id="mask0_2054_9037" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                        width="24" height="24">
-                        <rect width="24" height="24" fill="#D9D9D9" />
-                    </mask>
-                    <g mask="url(#mask0_2054_9037)">
-                        <path
-                            d="M9.55032 17.6538L4.21582 12.3193L5.28482 11.2501L9.55032 15.5156L18.7158 6.3501L19.7848 7.41935L9.55032 17.6538Z"
-                            fill="white" />
-                    </g>
-                </svg>
-            </button>
-        </div>
-    </div>
-    <script defer src="../js/formScript.js"></script>
     <script defer src="../js/script.js"></script>
     <script defer src="../js/counter.js"></script>
 </body>
