@@ -3433,6 +3433,190 @@ body[data-theme="red"] {
 .sect_project.portfolio {
   padding-top: 100px;
 }
+.sect_philoso{
+  padding-top: 100px;
+  padding-bottom: 250px;
+  background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+  .title__box{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 0px;
+  }
+  .text{
+    p{
+      color: var(--Colour-White-800, rgba(255, 255, 255, 0.80));
+
+/* Typography/Body/Medium */
+font-family: "IBM Plex Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+width: 100%;
+max-width: 600px;
+margin-top: 30px;
+    }
+  }
+  .grid3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    li{
+      margin-top: 78px;
+    }
+    p{
+      margin-top: 0px;
+      max-width: 240px;
+    }
+    h4{
+      color: var(--Colour-White-1000, #FFF);
+font-family: "IBM Plex Sans";
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 60px */
+letter-spacing: -3.6px;
+margin-top: 17px;
+    }
+  }
+}
+.sect_team{
+  padding-block: 100px;
+  .colomn{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    li{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+border-top: 1px solid var(--Colour-White-100, rgba(255, 255, 255, 0.10));
+    }
+    .name{
+      display: flex;
+      flex-direction: column;
+      padding: 16px 16px 0px 16px;
+      p{
+        color: var(--Colour-White-1000, #FFF);
+
+/* Typography/Body/Small */
+font-family: "IBM Plex Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+      }
+      h5{
+        color: var(--Colour-Charged-Blue-700, #197F8C);
+
+/* Typography/Body/Small */
+font-family: "IBM Plex Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+      }
+    }
+    .image{
+      height: 100%;
+    object-fit: cover;}
+    .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 16px 16px 0px 16px;
+
+      h5{
+        color: var(--Colour-Charged-Blue-500, #27C5D9);
+
+/* Typography/Label/Large */
+font-family: "IBM Plex Mono";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+text-transform: uppercase;
+      }
+      P{
+        color: var(--Colour-White-800, rgba(255, 255, 255, 0.80));
+
+/* Typography/Body/Medium */
+font-family: "IBM Plex Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 24px */
+      }
+    }
+  }
+}
+.first_blog{
+  .grid2{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .img_profile{
+    margin-left: 0px;
+  }
+  .quote_btn{
+    opacity: 1;
+  }
+.right{
+  h3{
+    color: var(--Colour-White-1000, #FFF);
+
+/* Typography/Header/Small */
+font-family: "IBM Plex Sans";
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 72px */
+letter-spacing: -4.2px;
+margin-bottom: 40px;
+width: 100%;
+max-width: 890px;
+  }
+  img{
+    height: 500px;
+    object-fit: cover;
+  }
+}
+  .left{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    padding-left: 16px;
+    .data{
+      color: var(--Colour-White-800, rgba(255, 255, 255, 0.80));
+font-family: "IBM Plex Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+margin-top: 28px;
+    }
+    .time{
+      margin-top: 4px;
+      color: var(--Colour-White-500, rgba(255, 255, 255, 0.50));
+font-family: "IBM Plex Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+    }
+  }
+}
+.top0{
+  padding-top: 0px;
+}
+.subscribe{
+  input{
+    margin-top: 24px;
+    max-width: 300px;
+    &:focus{
+      border-color:white !important ;
+    }
+  }
+}
 @media (min-width: 1441px) {
   .grid3_bot,
   .text_info,
@@ -3516,6 +3700,12 @@ body[data-theme="red"] {
   }
 }
 @media (max-width: 1150px) {
+  .sect_team .colomn li{
+    grid-template-columns: 1fr 1fr 2fr;
+    .empty{
+      display: none;
+    }
+  }
   .about_sect .grid4 {
     grid-template-columns: 1fr 1fr 1fr;
     .empty {
@@ -3568,6 +3758,26 @@ body[data-theme="red"] {
   }
 }
 @media (max-width: 950px) {
+  .first_blog{
+    display: none;
+  }
+  .sect_philoso .title__box{
+    grid-template-columns: 1fr;
+  }
+  .sect_team{
+    padding-top: 80px;
+    padding-bottom: 32px;
+    background: var(--Colour-White-50, rgba(255, 255, 255, 0.05));
+  }
+  .sect_philoso{
+    padding-block: 80px;
+  }
+  .sect_philoso .grid3 li{
+    margin-top: 50px;
+  }
+  .sect_philoso .grid3{
+    grid-template-columns: 1fr ;
+  }
   .about_sect .big_title{
     padding-left: 0px;
   }
@@ -4125,6 +4335,15 @@ text-transform: uppercase;
   }
 }
 @media (max-width: 700px) {
+  .sect_philoso .text p,.sect_philoso .grid3 p{
+    max-width: 100%;
+  }
+  .sect_team .colomn .name{
+    padding: 16px;
+  }
+  .sect_team .colomn li{
+    grid-template-columns: 1fr;
+  }
   .sect_hero_port{
     align-items: start;
     justify-content: space-between;
