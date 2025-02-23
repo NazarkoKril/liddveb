@@ -4173,7 +4173,7 @@ body[data-theme=red] {
 }
 
 .top0 {
-  padding-top: 0px;
+  padding-top: 0px !important;
 }
 
 .subscribe input {
