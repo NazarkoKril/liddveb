@@ -8,18 +8,18 @@ const lerpSpeed = 0.03;
 
 function getCameraPosition() {
     const width = window.innerWidth;
-    if (width > 1439) return 5;
+    if (width > 1439) return 6;
     if (width > 1100) return 6;
     if (width > 900) return 7;
-    if (width > 600) return 8;
-    return 7;
+    if (width > 600) return 10;
+    return 10;
 }
 
 function getModelPositionY() {
     const width = window.innerWidth;
-    if (width > 1440) return 0.5;
+    if (width > 1440) return 0.1;
     if (width > 900) return 0.5;
-    if (width > 300) return 0.9;
+    if (width > 300) return 0.6;
     return 0;
 }
 

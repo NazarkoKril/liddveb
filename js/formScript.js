@@ -1,7 +1,7 @@
 //modal--
 const modalMain = document.getElementById("modal_main1");
 const modalSuccess = document.getElementById("modal_main2");
-const closeModalButton = document.getElementById("closeModal");
+const closeModal = document.getElementById("closeModal");
 const form = document.getElementById("form_main_big");
 const submitButton = document.getElementById("form_main_submit");
 const successButton = document.getElementById("contact_button");

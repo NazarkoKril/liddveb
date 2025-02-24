@@ -3898,6 +3898,89 @@ margin-bottom: 28px;
   }
 
 }
+.select_file{
+  width: 100%;
+  height: 100px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed var(--Colour-White-300, rgba(255, 255, 255, 0.30));
+  transition: var(--trans);
+  &:hover{
+    border: 1px dashed rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.10);
+  }
+  &:active{
+    border: 1px dashed rgba(255, 255, 255, 0.50);
+background: rgba(255, 255, 255, 0.20);
+  }
+  &:focus-visible{
+    border: 1px solid #27C5D9;
+background: rgba(255, 255, 255, 0.20);
+  }
+  p{
+    color: var(--Colour-White-500, rgba(255, 255, 255, 0.50));
+
+/* Typography/Body/Small */
+font-family: "IBM Plex Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+  }
+  button{
+    color: var(--Colour-Charged-Blue-500, #27C5D9);
+text-align: center;
+
+/* Typography/Body/Small */
+font-family: "IBM Plex Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+background: transparent;
+border: none;
+cursor: pointer;
+  }
+}
+.file-preview{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  span{
+    color: #FFF;
+
+/* Typography/Body/Small */
+font-family: "IBM Plex Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+  }
+}
+.sect_404{
+
+  .flex{
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100svh;
+
+  }
+  .grid3{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+.mob{
+  display: none;
+}
+}
 @media (min-width: 1441px) {
   .sect_blogCard .right .text,
   .sect_blogCard .right .flex,
@@ -3929,6 +4012,7 @@ margin-bottom: 28px;
     height: 330px;
   }
 }
+
 @media (max-width: 1440px) {
   .box_center p {
     font-size: 14px;
@@ -3961,6 +4045,9 @@ margin-bottom: 28px;
   }
 }
 @media (max-width: 1200px) {
+  .sect_404 .flex img{
+    padding-bottom: 0px;
+  }
   .service_item .text .subtitle {
     padding-right: 20px;
   }
@@ -4090,6 +4177,7 @@ margin-bottom: 28px;
     padding-bottom: 80px;
   }
   .share_mob {
+    display: flex;
     margin-left: 0px;
     margin-right: auto;
     padding-left: 16px;
@@ -4637,6 +4725,27 @@ margin-bottom: 28px;
   }
 }
 @media (max-width: 700px) {
+  .sect_404 .grid3{
+    grid-template-columns: 1fr;
+    
+    .empty{
+      display: none;
+    }
+    a{
+      margin-right: 0px;
+      margin-left: auto;
+    }
+    padding-right: 16px;
+  }
+
+.sect_404{
+  .desk{
+    display: none;
+  }
+  .mob{
+    display: block;
+  }
+}
   .sect_career .career_item{
     height: auto;
     padding-bottom: 40px;
@@ -4945,4 +5054,10 @@ letter-spacing: -2.4px;
   body {
     overflow-x: hidden !important;
   }
+  .grid3_footer{
+grid-template-columns: 1fr 1fr;  }
+.grid3_footer .right{
+  margin-left: 0px;
+  margin-right: auto;
+}
 }
