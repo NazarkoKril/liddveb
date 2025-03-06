@@ -128,28 +128,63 @@ style.textContent = `
   .header.hidden {
     transform: translateY(-100%);
   }
+  .nav_sub, .share {
+    transition: top 0.6s ease-in-out;
+  }
 `;
 document.head.appendChild(style);
 
 let lastScrollPosition = 0;
 let ticking = false;
 const header = document.querySelector(".header");
+const stickyElements = document.querySelectorAll(".nav_sub, .share");
 const SCROLL_THRESHOLD = 40;
+const HEADER_HEIGHT = 72;
 
 if (header) {
+  // Обробник скролу
   window.addEventListener("scroll", () => {
     const currentScrollPosition = window.pageYOffset;
     if (!ticking) {
       window.requestAnimationFrame(() => {
         if (currentScrollPosition <= 20) {
           header.classList.remove("hidden");
+          stickyElements.forEach(el => el.style.top = `${HEADER_HEIGHT + 16}px`);
         } else if (Math.abs(currentScrollPosition - lastScrollPosition) >= SCROLL_THRESHOLD) {
-          currentScrollPosition > lastScrollPosition ? header.classList.add("hidden") : header.classList.remove("hidden");
+          if (currentScrollPosition > lastScrollPosition) {
+            header.classList.add("hidden");
+            stickyElements.forEach(el => el.style.top = "16px");
+          } else {
+            header.classList.remove("hidden");
+            stickyElements.forEach(el => el.style.top = `${HEADER_HEIGHT + 16}px`);
+          }
           lastScrollPosition = currentScrollPosition;
         }
         ticking = false;
       });
       ticking = true;
     }
+  });
+  
+  // Якірні посилання з подвійним кліком
+  document.querySelectorAll('.nav_sub a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+
+        const offset = header.classList.contains('hidden') ? 16 : HEADER_HEIGHT + 16;
+        let targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({top: targetPosition, behavior: 'smooth'});
+        
+        setTimeout(() => {
+          const updatedOffset = header.classList.contains('hidden') ? 16 : HEADER_HEIGHT + 16;
+          targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - updatedOffset;
+          window.scrollTo({top: targetPosition, behavior: 'smooth'});
+        }, 200);
+      }
+    });
   });
 }
