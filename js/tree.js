@@ -50,11 +50,11 @@ function init() {
     directionalLight.castShadow = true;
     scene.add(directionalLight);
 
-    const texture = new THREE.TextureLoader().load("../model/Image_0.jpg");
+    const texture = new THREE.TextureLoader().load("./model/Image_0.jpg");
 
     const modelPath = window.innerWidth < MOBILE_BREAKPOINT ?
-        "../model/LiddWeb_mobile.gltf" :
-        "../model/LiddWeb.gltf";
+        "./model/LiddWeb_mobile.gltf" :
+        "./model/LiddWeb.gltf";
 
     new THREE.GLTFLoader().load(modelPath, function (gltf) {
         model = gltf.scene;
