@@ -547,6 +547,7 @@ body[data-theme="red"] {
   width: 100%;
   height: 100%;
   background-color: #020d12;
+  overflow-y: auto;
 }
 
 .left_form_main {
@@ -758,7 +759,9 @@ body[data-theme="red"] {
     transition: var(--trans);
   }
 }
-
+.selected.active {
+  color: white;
+}
 // main ------------------------------------------------
 // sect_hero
 .main__svg_logo {
@@ -1656,7 +1659,7 @@ body[data-theme="red"] {
   font-weight: 400;
   line-height: 100%;
   transition: var(--text);
-  letter-spacing: -4px;
+  letter-spacing: -2.5px;
 }
 
 .faq_content {

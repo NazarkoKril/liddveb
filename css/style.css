@@ -634,6 +634,7 @@ body[data-theme=red] {
   width: 100%;
   height: 100%;
   background-color: #020d12;
+  overflow-y: auto;
 }
 
 .left_form_main {
@@ -884,6 +885,10 @@ body[data-theme=red] {
   /* 142.857% */
   -webkit-transition: var(--trans);
   transition: var(--trans);
+}
+
+.selected.active {
+  color: white;
 }
 
 .main__svg_logo {
@@ -1896,7 +1901,7 @@ body[data-theme=red] {
   line-height: 100%;
   -webkit-transition: var(--text);
   transition: var(--text);
-  letter-spacing: -4px;
+  letter-spacing: -2.5px;
 }
 
 .faq_content {
