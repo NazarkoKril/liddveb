@@ -264,7 +264,7 @@ body[data-theme="red"] {
   position: fixed;
   top: 72px;
   left: 0;
-  height: calc(100dvh - 72px);
+  height: 100svh;
   width: 100%;
   background: #0f191d;
   display: flex;
@@ -295,6 +295,7 @@ body[data-theme="red"] {
   padding: 16px 0px;
   position: relative;
   gap: 12px;
+  padding-bottom: 100px;
 }
 
 .menu-list li {
